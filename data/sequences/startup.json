@@ -1,0 +1,56 @@
+[
+  {
+    "index": 0,
+    "address": "0x20",
+    "command": "0x19",
+    "command_name": "CAPABILITY",
+    "write_data": "",
+    "expected_response": "00",
+    "description": "Read CAPABILITY"
+  },
+  {
+    "index": 1,
+    "address": "0x20",
+    "command": "0x03",
+    "command_name": "CLEAR_FAULTS",
+    "write_data": "",
+    "expected_response": "",
+    "description": "CLEAR_FAULTS"
+  },
+  {
+    "index": 2,
+    "address": "0x20",
+    "command": "0x46",
+    "command_name": "IOUT_OC_FAULT_LIMIT",
+    "write_data": "0028",
+    "expected_response": "",
+    "description": "Set IOUT_OC_FAULT"
+  },
+  {
+    "index": 3,
+    "address": "0x20",
+    "command": "0x55",
+    "command_name": "VIN_OV_FAULT_LIMIT",
+    "write_data": "003c",
+    "expected_response": "",
+    "description": "Set VIN_OV_FAULT"
+  },
+  {
+    "index": 4,
+    "address": "0x20",
+    "command": "0x01",
+    "command_name": "OPERATION",
+    "write_data": "80",
+    "expected_response": "",
+    "description": "OPERATION - Turn ON"
+  },
+  {
+    "index": 5,
+    "address": "0x20",
+    "command": "0x78",
+    "command_name": "STATUS_BYTE",
+    "write_data": "",
+    "expected_response": "40",
+    "description": "Read STATUS_BYTE"
+  }
+]

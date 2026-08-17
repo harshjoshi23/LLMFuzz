@@ -1,0 +1,2102 @@
+[
+  {
+    "data": "7b311f",
+    "peripheral": "i2c",
+    "description": "Valid I2C write to addr 0x3D, reg 0x31",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "73d1358a",
+    "peripheral": "i2c",
+    "description": "Valid I2C write to addr 0x39, reg 0xD1",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "c79fd7",
+    "peripheral": "i2c",
+    "description": "Valid I2C write to addr 0x63, reg 0x9F",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "9e80c4",
+    "peripheral": "i2c",
+    "description": "Valid I2C write to addr 0x4F, reg 0x80",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "7b25a17d51",
+    "peripheral": "i2c",
+    "description": "Valid I2C write to addr 0x3D, reg 0x25",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "63ca18aa3112",
+    "peripheral": "i2c",
+    "description": "Valid I2C write to addr 0x31, reg 0xCA",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "507e75",
+    "peripheral": "i2c",
+    "description": "Valid I2C write to addr 0x28, reg 0x7E",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "8290c704",
+    "peripheral": "i2c",
+    "description": "Valid I2C write to addr 0x41, reg 0x90",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "8e549bc8ccc6",
+    "peripheral": "i2c",
+    "description": "Valid I2C write to addr 0x47, reg 0x54",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "ef3c71",
+    "peripheral": "i2c",
+    "description": "Valid I2C write to addr 0x77, reg 0x3C",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "7fc0e909f524",
+    "peripheral": "i2c",
+    "description": "Valid I2C write to addr 0x3F, reg 0xC0",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "e38d18",
+    "peripheral": "i2c",
+    "description": "Valid I2C write to addr 0x71, reg 0x8D",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "839f38e5fa",
+    "peripheral": "i2c",
+    "description": "Valid I2C write to addr 0x41, reg 0x9F",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "1f5ce4d8c3",
+    "peripheral": "i2c",
+    "description": "Valid I2C write to addr 0x0F, reg 0x5C",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "883b3905",
+    "peripheral": "i2c",
+    "description": "Valid I2C write to addr 0x44, reg 0x3B",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "881fb5f47e",
+    "peripheral": "i2c",
+    "description": "Valid I2C write to addr 0x44, reg 0x1F",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "549c2924",
+    "peripheral": "i2c",
+    "description": "Valid I2C write to addr 0x2A, reg 0x9C",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "acb5bfe885",
+    "peripheral": "i2c",
+    "description": "Valid I2C write to addr 0x56, reg 0xB5",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "38cde714",
+    "peripheral": "i2c",
+    "description": "Valid I2C write to addr 0x1C, reg 0xCD",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "7a2145",
+    "peripheral": "i2c",
+    "description": "Valid I2C write to addr 0x3D, reg 0x21",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "139e43e15a",
+    "peripheral": "i2c",
+    "description": "Valid I2C write to addr 0x09, reg 0x9E",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "c8f9af3e04bc",
+    "peripheral": "i2c",
+    "description": "Valid I2C write to addr 0x64, reg 0xF9",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "bf3a0747f657",
+    "peripheral": "i2c",
+    "description": "Valid I2C write to addr 0x5F, reg 0x3A",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "daeb40",
+    "peripheral": "i2c",
+    "description": "Valid I2C write to addr 0x6D, reg 0xEB",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "60b26d",
+    "peripheral": "i2c",
+    "description": "Valid I2C write to addr 0x30, reg 0xB2",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "7529938a",
+    "peripheral": "i2c",
+    "description": "Valid I2C write to addr 0x3A, reg 0x29",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "a72c24d5",
+    "peripheral": "i2c",
+    "description": "Valid I2C write to addr 0x53, reg 0x2C",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "92c564ea74b0",
+    "peripheral": "i2c",
+    "description": "Valid I2C write to addr 0x49, reg 0xC5",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "3b956d53bb",
+    "peripheral": "i2c",
+    "description": "Valid I2C write to addr 0x1D, reg 0x95",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "25af2b58aa",
+    "peripheral": "i2c",
+    "description": "Valid I2C write to addr 0x12, reg 0xAF",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "30e2b45726",
+    "peripheral": "i2c",
+    "description": "Valid I2C write to addr 0x18, reg 0xE2",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "ad61dca11e16",
+    "peripheral": "i2c",
+    "description": "Valid I2C write to addr 0x56, reg 0x61",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "a9cfa4fd29",
+    "peripheral": "i2c",
+    "description": "Valid I2C write to addr 0x54, reg 0xCF",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "cfee4a8384",
+    "peripheral": "i2c",
+    "description": "Valid I2C write to addr 0x67, reg 0xEE",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "631415",
+    "peripheral": "i2c",
+    "description": "Valid I2C write to addr 0x31, reg 0x14",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "abf4b940c5d8",
+    "peripheral": "i2c",
+    "description": "Valid I2C write to addr 0x55, reg 0xF4",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "de5593f154",
+    "peripheral": "i2c",
+    "description": "Valid I2C write to addr 0x6F, reg 0x55",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "204dfc",
+    "peripheral": "i2c",
+    "description": "Valid I2C write to addr 0x10, reg 0x4D",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "bdfea57986",
+    "peripheral": "i2c",
+    "description": "Valid I2C write to addr 0x5E, reg 0xFE",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "e02826cb",
+    "peripheral": "i2c",
+    "description": "Valid I2C write to addr 0x70, reg 0x28",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "8788fb32f8",
+    "peripheral": "i2c",
+    "description": "Valid I2C write to addr 0x43, reg 0x88",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "9cbf9635",
+    "peripheral": "i2c",
+    "description": "Valid I2C write to addr 0x4E, reg 0xBF",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "6cefc4",
+    "peripheral": "i2c",
+    "description": "Valid I2C write to addr 0x36, reg 0xEF",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "a3079c",
+    "peripheral": "i2c",
+    "description": "Valid I2C write to addr 0x51, reg 0x07",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "9c5045b770b1",
+    "peripheral": "i2c",
+    "description": "Valid I2C write to addr 0x4E, reg 0x50",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "2f8ecd990772",
+    "peripheral": "i2c",
+    "description": "Valid I2C write to addr 0x17, reg 0x8E",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "5839f75862",
+    "peripheral": "i2c",
+    "description": "Valid I2C write to addr 0x2C, reg 0x39",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "4dd525de",
+    "peripheral": "i2c",
+    "description": "Valid I2C write to addr 0x26, reg 0xD5",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "10f19ed6d5",
+    "peripheral": "i2c",
+    "description": "Valid I2C write to addr 0x08, reg 0xF1",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "a76c2ed6eb01",
+    "peripheral": "i2c",
+    "description": "Valid I2C write to addr 0x53, reg 0x6C",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "e5574e6a3100",
+    "peripheral": "i2c",
+    "description": "Valid I2C write to addr 0x72, reg 0x57",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "98c41b938e03",
+    "peripheral": "i2c",
+    "description": "Valid I2C write to addr 0x4C, reg 0xC4",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "e8f809",
+    "peripheral": "i2c",
+    "description": "Valid I2C write to addr 0x74, reg 0xF8",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "402193643b",
+    "peripheral": "i2c",
+    "description": "Valid I2C write to addr 0x20, reg 0x21",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "a336e857",
+    "peripheral": "i2c",
+    "description": "Valid I2C write to addr 0x51, reg 0x36",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "181dd5c1",
+    "peripheral": "i2c",
+    "description": "Valid I2C write to addr 0x0C, reg 0x1D",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "84bd06",
+    "peripheral": "i2c",
+    "description": "Valid I2C write to addr 0x42, reg 0xBD",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "5a2c1b",
+    "peripheral": "i2c",
+    "description": "Valid I2C write to addr 0x2D, reg 0x2C",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "ae96d3",
+    "peripheral": "i2c",
+    "description": "Valid I2C write to addr 0x57, reg 0x96",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "1e9a227a35",
+    "peripheral": "i2c",
+    "description": "Valid I2C write to addr 0x0F, reg 0x9A",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "ffff00ff000000ffff00ff00000000ff00ffffffff0000ffff00ffff0000ff000000",
+    "peripheral": "i2c",
+    "description": "Boundary I2C: addr 0x7F, reg 0xFF, len=32",
+    "category": "boundary",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "fe00",
+    "peripheral": "i2c",
+    "description": "Boundary I2C: addr 0x7F, reg 0x00, len=0",
+    "category": "boundary",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "0100",
+    "peripheral": "i2c",
+    "description": "Boundary I2C: addr 0x00, reg 0x00, len=0",
+    "category": "boundary",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "010000",
+    "peripheral": "i2c",
+    "description": "Boundary I2C: addr 0x00, reg 0x00, len=1",
+    "category": "boundary",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "ffffff",
+    "peripheral": "i2c",
+    "description": "Boundary I2C: addr 0x7F, reg 0xFF, len=1",
+    "category": "boundary",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "01ff",
+    "peripheral": "i2c",
+    "description": "Boundary I2C: addr 0x00, reg 0xFF, len=0",
+    "category": "boundary",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "11000000ffff000000ff000000ffff000000ffffffffff00ff0000ffffffff000000",
+    "peripheral": "i2c",
+    "description": "Boundary I2C: addr 0x08, reg 0x00, len=32",
+    "category": "boundary",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "ee00ff",
+    "peripheral": "i2c",
+    "description": "Boundary I2C: addr 0x77, reg 0x00, len=1",
+    "category": "boundary",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "01ff00",
+    "peripheral": "i2c",
+    "description": "Boundary I2C: addr 0x00, reg 0xFF, len=1",
+    "category": "boundary",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "feff",
+    "peripheral": "i2c",
+    "description": "Boundary I2C: addr 0x7F, reg 0xFF, len=0",
+    "category": "boundary",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "00ff00ff00ffffffff00ffff00ff00ffff0000ffffffffffff0000ff00ffff00ff00",
+    "peripheral": "i2c",
+    "description": "Boundary I2C: addr 0x00, reg 0xFF, len=32",
+    "category": "boundary",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "fe0000ff00ff000000ffffffffffff0000ffffff0000ff00ffffff00ff00ff00ffff",
+    "peripheral": "i2c",
+    "description": "Boundary I2C: addr 0x7F, reg 0x00, len=32",
+    "category": "boundary",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "1000",
+    "peripheral": "i2c",
+    "description": "Boundary I2C: addr 0x08, reg 0x00, len=0",
+    "category": "boundary",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "fe00",
+    "peripheral": "i2c",
+    "description": "Boundary I2C: addr 0x7F, reg 0x00, len=0",
+    "category": "boundary",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "00ff00",
+    "peripheral": "i2c",
+    "description": "Boundary I2C: addr 0x00, reg 0xFF, len=1",
+    "category": "boundary",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "10ff00",
+    "peripheral": "i2c",
+    "description": "Boundary I2C: addr 0x08, reg 0xFF, len=1",
+    "category": "boundary",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "ee00ffff0000ffffffffffff0000ffff000000ffff00ffff00ffffff0000ffff00ff",
+    "peripheral": "i2c",
+    "description": "Boundary I2C: addr 0x77, reg 0x00, len=32",
+    "category": "boundary",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "1000",
+    "peripheral": "i2c",
+    "description": "Boundary I2C: addr 0x08, reg 0x00, len=0",
+    "category": "boundary",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "00ff00",
+    "peripheral": "i2c",
+    "description": "Boundary I2C: addr 0x00, reg 0xFF, len=1",
+    "category": "boundary",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "fe0000",
+    "peripheral": "i2c",
+    "description": "Boundary I2C: addr 0x7F, reg 0x00, len=1",
+    "category": "boundary",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "5afaffffffff",
+    "peripheral": "i2c",
+    "description": "Edge case I2C: special pattern to addr 0x2D",
+    "category": "edge_case",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "8b2100ff00ff",
+    "peripheral": "i2c",
+    "description": "Edge case I2C: special pattern to addr 0x45",
+    "category": "edge_case",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "283daa55aa55",
+    "peripheral": "i2c",
+    "description": "Edge case I2C: special pattern to addr 0x14",
+    "category": "edge_case",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "2c5fffffffff",
+    "peripheral": "i2c",
+    "description": "Edge case I2C: special pattern to addr 0x16",
+    "category": "edge_case",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "5ea3ffffffff",
+    "peripheral": "i2c",
+    "description": "Edge case I2C: special pattern to addr 0x2F",
+    "category": "edge_case",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "b52300000000",
+    "peripheral": "i2c",
+    "description": "Edge case I2C: special pattern to addr 0x5A",
+    "category": "edge_case",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "68e000000000",
+    "peripheral": "i2c",
+    "description": "Edge case I2C: special pattern to addr 0x34",
+    "category": "edge_case",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "9bbcaa55aa55",
+    "peripheral": "i2c",
+    "description": "Edge case I2C: special pattern to addr 0x4D",
+    "category": "edge_case",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "b3ebaa55aa55",
+    "peripheral": "i2c",
+    "description": "Edge case I2C: special pattern to addr 0x59",
+    "category": "edge_case",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "7fc155aa55aa",
+    "peripheral": "i2c",
+    "description": "Edge case I2C: special pattern to addr 0x3F",
+    "category": "edge_case",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "cbce00ff00ff",
+    "peripheral": "i2c",
+    "description": "Edge case I2C: special pattern to addr 0x65",
+    "category": "edge_case",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "e6d8ffffffff",
+    "peripheral": "i2c",
+    "description": "Edge case I2C: special pattern to addr 0x73",
+    "category": "edge_case",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "6a4800000000",
+    "peripheral": "i2c",
+    "description": "Edge case I2C: special pattern to addr 0x35",
+    "category": "edge_case",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "c8b000000000",
+    "peripheral": "i2c",
+    "description": "Edge case I2C: special pattern to addr 0x64",
+    "category": "edge_case",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "5b6edeadbeef",
+    "peripheral": "i2c",
+    "description": "Edge case I2C: special pattern to addr 0x2D",
+    "category": "edge_case",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "0b4694c325",
+    "peripheral": "i2c",
+    "description": "Invalid I2C: reserved addr 0x05",
+    "category": "invalid",
+    "expected_behavior": "reject"
+  },
+  {
+    "data": "0210f76666",
+    "peripheral": "i2c",
+    "description": "Invalid I2C: reserved addr 0x01",
+    "category": "invalid",
+    "expected_behavior": "reject"
+  },
+  {
+    "data": "f94a5bd207",
+    "peripheral": "i2c",
+    "description": "Invalid I2C: reserved addr 0x7C",
+    "category": "invalid",
+    "expected_behavior": "reject"
+  },
+  {
+    "data": "f951d3",
+    "peripheral": "i2c",
+    "description": "Invalid I2C: reserved addr 0x7C",
+    "category": "invalid",
+    "expected_behavior": "reject"
+  },
+  {
+    "data": "0ee096bf",
+    "peripheral": "i2c",
+    "description": "Invalid I2C: reserved addr 0x07",
+    "category": "invalid",
+    "expected_behavior": "reject"
+  },
+  {
+    "data": "9444c4f0",
+    "peripheral": "pmbus",
+    "description": "Valid PMBus: cmd 0x44 (VOUT_UV_FAULT)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "94550018",
+    "peripheral": "pmbus",
+    "description": "Valid PMBus: cmd 0x55 (UNKNOWN)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "948b",
+    "peripheral": "pmbus",
+    "description": "Valid PMBus: cmd 0x8B (READ_VOUT)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "9443ae85",
+    "peripheral": "pmbus",
+    "description": "Valid PMBus: cmd 0x43 (VOUT_UV_WARN)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "947b",
+    "peripheral": "pmbus",
+    "description": "Valid PMBus: cmd 0x7B (UNKNOWN)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "9479",
+    "peripheral": "pmbus",
+    "description": "Valid PMBus: cmd 0x79 (STATUS_WORD)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "945180ec",
+    "peripheral": "pmbus",
+    "description": "Valid PMBus: cmd 0x51 (UNKNOWN)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "947a",
+    "peripheral": "pmbus",
+    "description": "Valid PMBus: cmd 0x7A (UNKNOWN)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "941933",
+    "peripheral": "pmbus",
+    "description": "Valid PMBus: cmd 0x19 (CAPABILITY)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "9419dd",
+    "peripheral": "pmbus",
+    "description": "Valid PMBus: cmd 0x19 (CAPABILITY)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "9459e84e",
+    "peripheral": "pmbus",
+    "description": "Valid PMBus: cmd 0x59 (UNKNOWN)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "947a",
+    "peripheral": "pmbus",
+    "description": "Valid PMBus: cmd 0x7A (UNKNOWN)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "948d",
+    "peripheral": "pmbus",
+    "description": "Valid PMBus: cmd 0x8D (READ_TEMP1)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "9446f3c3",
+    "peripheral": "pmbus",
+    "description": "Valid PMBus: cmd 0x46 (IOUT_OC_FAULT)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "9401e7",
+    "peripheral": "pmbus",
+    "description": "Valid PMBus: cmd 0x01 (OPERATION)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "94427783",
+    "peripheral": "pmbus",
+    "description": "Valid PMBus: cmd 0x42 (VOUT_OV_WARN)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "948b",
+    "peripheral": "pmbus",
+    "description": "Valid PMBus: cmd 0x8B (READ_VOUT)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "9458b330",
+    "peripheral": "pmbus",
+    "description": "Valid PMBus: cmd 0x58 (UNKNOWN)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "948b",
+    "peripheral": "pmbus",
+    "description": "Valid PMBus: cmd 0x8B (READ_VOUT)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "948c",
+    "peripheral": "pmbus",
+    "description": "Valid PMBus: cmd 0x8C (READ_IOUT)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "94579d06",
+    "peripheral": "pmbus",
+    "description": "Valid PMBus: cmd 0x57 (UNKNOWN)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "9480",
+    "peripheral": "pmbus",
+    "description": "Valid PMBus: cmd 0x80 (UNKNOWN)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "9459c564",
+    "peripheral": "pmbus",
+    "description": "Valid PMBus: cmd 0x59 (UNKNOWN)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "948e",
+    "peripheral": "pmbus",
+    "description": "Valid PMBus: cmd 0x8E (READ_TEMP2)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "9447a8",
+    "peripheral": "pmbus",
+    "description": "Valid PMBus: cmd 0x47 (UNKNOWN)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "947b",
+    "peripheral": "pmbus",
+    "description": "Valid PMBus: cmd 0x7B (UNKNOWN)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "944727",
+    "peripheral": "pmbus",
+    "description": "Valid PMBus: cmd 0x47 (UNKNOWN)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "94580ed2",
+    "peripheral": "pmbus",
+    "description": "Valid PMBus: cmd 0x58 (UNKNOWN)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "945569f6",
+    "peripheral": "pmbus",
+    "description": "Valid PMBus: cmd 0x55 (UNKNOWN)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "941940",
+    "peripheral": "pmbus",
+    "description": "Valid PMBus: cmd 0x19 (CAPABILITY)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "9479",
+    "peripheral": "pmbus",
+    "description": "Valid PMBus: cmd 0x79 (STATUS_WORD)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "948b",
+    "peripheral": "pmbus",
+    "description": "Valid PMBus: cmd 0x8B (READ_VOUT)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "9486",
+    "peripheral": "pmbus",
+    "description": "Valid PMBus: cmd 0x86 (UNKNOWN)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "94447640",
+    "peripheral": "pmbus",
+    "description": "Valid PMBus: cmd 0x44 (VOUT_UV_FAULT)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "948c",
+    "peripheral": "pmbus",
+    "description": "Valid PMBus: cmd 0x8C (READ_IOUT)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "944279b8",
+    "peripheral": "pmbus",
+    "description": "Valid PMBus: cmd 0x42 (VOUT_OV_WARN)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "947d",
+    "peripheral": "pmbus",
+    "description": "Valid PMBus: cmd 0x7D (UNKNOWN)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "945847cb",
+    "peripheral": "pmbus",
+    "description": "Valid PMBus: cmd 0x58 (UNKNOWN)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "944f37a2",
+    "peripheral": "pmbus",
+    "description": "Valid PMBus: cmd 0x4F (UNKNOWN)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "947c",
+    "peripheral": "pmbus",
+    "description": "Valid PMBus: cmd 0x7C (UNKNOWN)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "948b",
+    "peripheral": "pmbus",
+    "description": "Valid PMBus: cmd 0x8B (READ_VOUT)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "948e",
+    "peripheral": "pmbus",
+    "description": "Valid PMBus: cmd 0x8E (READ_TEMP2)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "9478",
+    "peripheral": "pmbus",
+    "description": "Valid PMBus: cmd 0x78 (STATUS_BYTE)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "948c",
+    "peripheral": "pmbus",
+    "description": "Valid PMBus: cmd 0x8C (READ_IOUT)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "947c",
+    "peripheral": "pmbus",
+    "description": "Valid PMBus: cmd 0x7C (UNKNOWN)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "94586e6d",
+    "peripheral": "pmbus",
+    "description": "Valid PMBus: cmd 0x58 (UNKNOWN)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "9488",
+    "peripheral": "pmbus",
+    "description": "Valid PMBus: cmd 0x88 (READ_VIN)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "94579796",
+    "peripheral": "pmbus",
+    "description": "Valid PMBus: cmd 0x57 (UNKNOWN)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "94467054",
+    "peripheral": "pmbus",
+    "description": "Valid PMBus: cmd 0x46 (IOUT_OC_FAULT)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "947b",
+    "peripheral": "pmbus",
+    "description": "Valid PMBus: cmd 0x7B (UNKNOWN)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "9480",
+    "peripheral": "pmbus",
+    "description": "Valid PMBus: cmd 0x80 (UNKNOWN)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "9442e3ab",
+    "peripheral": "pmbus",
+    "description": "Valid PMBus: cmd 0x42 (VOUT_OV_WARN)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "947e",
+    "peripheral": "pmbus",
+    "description": "Valid PMBus: cmd 0x7E (UNKNOWN)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "947f",
+    "peripheral": "pmbus",
+    "description": "Valid PMBus: cmd 0x7F (UNKNOWN)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "9444606c",
+    "peripheral": "pmbus",
+    "description": "Valid PMBus: cmd 0x44 (VOUT_UV_FAULT)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "94573111",
+    "peripheral": "pmbus",
+    "description": "Valid PMBus: cmd 0x57 (UNKNOWN)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "9401b3",
+    "peripheral": "pmbus",
+    "description": "Valid PMBus: cmd 0x01 (OPERATION)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "9486",
+    "peripheral": "pmbus",
+    "description": "Valid PMBus: cmd 0x86 (UNKNOWN)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "944f2cdd",
+    "peripheral": "pmbus",
+    "description": "Valid PMBus: cmd 0x4F (UNKNOWN)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "947a",
+    "peripheral": "pmbus",
+    "description": "Valid PMBus: cmd 0x7A (UNKNOWN)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "944aff7f",
+    "peripheral": "pmbus",
+    "description": "Boundary PMBus: cmd 0x4A with extreme value",
+    "category": "boundary",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "94580080",
+    "peripheral": "pmbus",
+    "description": "Boundary PMBus: cmd 0x58 with extreme value",
+    "category": "boundary",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "94550000",
+    "peripheral": "pmbus",
+    "description": "Boundary PMBus: cmd 0x55 with extreme value",
+    "category": "boundary",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "9455ff7f",
+    "peripheral": "pmbus",
+    "description": "Boundary PMBus: cmd 0x55 with extreme value",
+    "category": "boundary",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "944a0000",
+    "peripheral": "pmbus",
+    "description": "Boundary PMBus: cmd 0x4A with extreme value",
+    "category": "boundary",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "94460000",
+    "peripheral": "pmbus",
+    "description": "Boundary PMBus: cmd 0x46 with extreme value",
+    "category": "boundary",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "94550080",
+    "peripheral": "pmbus",
+    "description": "Boundary PMBus: cmd 0x55 with extreme value",
+    "category": "boundary",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "9443ff7f",
+    "peripheral": "pmbus",
+    "description": "Boundary PMBus: cmd 0x43 with extreme value",
+    "category": "boundary",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "94430000",
+    "peripheral": "pmbus",
+    "description": "Boundary PMBus: cmd 0x43 with extreme value",
+    "category": "boundary",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "94440000",
+    "peripheral": "pmbus",
+    "description": "Boundary PMBus: cmd 0x44 with extreme value",
+    "category": "boundary",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "94420000",
+    "peripheral": "pmbus",
+    "description": "Boundary PMBus: cmd 0x42 with extreme value",
+    "category": "boundary",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "94440000",
+    "peripheral": "pmbus",
+    "description": "Boundary PMBus: cmd 0x44 with extreme value",
+    "category": "boundary",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "94430080",
+    "peripheral": "pmbus",
+    "description": "Boundary PMBus: cmd 0x43 with extreme value",
+    "category": "boundary",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "9459ff7f",
+    "peripheral": "pmbus",
+    "description": "Boundary PMBus: cmd 0x59 with extreme value",
+    "category": "boundary",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "94590000",
+    "peripheral": "pmbus",
+    "description": "Boundary PMBus: cmd 0x59 with extreme value",
+    "category": "boundary",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "944aff7f",
+    "peripheral": "pmbus",
+    "description": "Boundary PMBus: cmd 0x4A with extreme value",
+    "category": "boundary",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "9455ffff",
+    "peripheral": "pmbus",
+    "description": "Boundary PMBus: cmd 0x55 with extreme value",
+    "category": "boundary",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "94440000",
+    "peripheral": "pmbus",
+    "description": "Boundary PMBus: cmd 0x44 with extreme value",
+    "category": "boundary",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "9444ff7f",
+    "peripheral": "pmbus",
+    "description": "Boundary PMBus: cmd 0x44 with extreme value",
+    "category": "boundary",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "944aff7f",
+    "peripheral": "pmbus",
+    "description": "Boundary PMBus: cmd 0x4A with extreme value",
+    "category": "boundary",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "9488",
+    "peripheral": "pmbus",
+    "description": "Edge case PMBus: cmd 0x88",
+    "category": "edge_case",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "9478",
+    "peripheral": "pmbus",
+    "description": "Edge case PMBus: cmd 0x78",
+    "category": "edge_case",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "9444ffff",
+    "peripheral": "pmbus",
+    "description": "Edge case PMBus: cmd 0x44",
+    "category": "edge_case",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "944f0000",
+    "peripheral": "pmbus",
+    "description": "Edge case PMBus: cmd 0x4F",
+    "category": "edge_case",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "94460000",
+    "peripheral": "pmbus",
+    "description": "Edge case PMBus: cmd 0x46",
+    "category": "edge_case",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "94588000",
+    "peripheral": "pmbus",
+    "description": "Edge case PMBus: cmd 0x58",
+    "category": "edge_case",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "94438000",
+    "peripheral": "pmbus",
+    "description": "Edge case PMBus: cmd 0x43",
+    "category": "edge_case",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "94460000",
+    "peripheral": "pmbus",
+    "description": "Edge case PMBus: cmd 0x46",
+    "category": "edge_case",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "9446aa55",
+    "peripheral": "pmbus",
+    "description": "Edge case PMBus: cmd 0x46",
+    "category": "edge_case",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "94460000",
+    "peripheral": "pmbus",
+    "description": "Edge case PMBus: cmd 0x46",
+    "category": "edge_case",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "947c",
+    "peripheral": "pmbus",
+    "description": "Edge case PMBus: cmd 0x7C",
+    "category": "edge_case",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "94460000",
+    "peripheral": "pmbus",
+    "description": "Edge case PMBus: cmd 0x46",
+    "category": "edge_case",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "9401aa",
+    "peripheral": "pmbus",
+    "description": "Edge case PMBus: cmd 0x01",
+    "category": "edge_case",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "941980",
+    "peripheral": "pmbus",
+    "description": "Edge case PMBus: cmd 0x19",
+    "category": "edge_case",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "94460000",
+    "peripheral": "pmbus",
+    "description": "Edge case PMBus: cmd 0x46",
+    "category": "edge_case",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "940490855f",
+    "peripheral": "pmbus",
+    "description": "Invalid PMBus: unknown cmd 0x04",
+    "category": "invalid",
+    "expected_behavior": "reject"
+  },
+  {
+    "data": "9404212c",
+    "peripheral": "pmbus",
+    "description": "Invalid PMBus: unknown cmd 0x04",
+    "category": "invalid",
+    "expected_behavior": "reject"
+  },
+  {
+    "data": "94003b04c89b",
+    "peripheral": "pmbus",
+    "description": "Invalid PMBus: unknown cmd 0x00",
+    "category": "invalid",
+    "expected_behavior": "reject"
+  },
+  {
+    "data": "940094bbc2",
+    "peripheral": "pmbus",
+    "description": "Invalid PMBus: unknown cmd 0x00",
+    "category": "invalid",
+    "expected_behavior": "reject"
+  },
+  {
+    "data": "9405cc685e94",
+    "peripheral": "pmbus",
+    "description": "Invalid PMBus: unknown cmd 0x05",
+    "category": "invalid",
+    "expected_behavior": "reject"
+  },
+  {
+    "data": "05094a",
+    "peripheral": "adc",
+    "description": "Valid ADC: ch5 = 2378 (1916mV)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "07043b",
+    "peripheral": "adc",
+    "description": "Valid ADC: ch7 = 1083 (873mV)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "040be0",
+    "peripheral": "adc",
+    "description": "Valid ADC: ch4 = 3040 (2450mV)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "040d05",
+    "peripheral": "adc",
+    "description": "Valid ADC: ch4 = 3333 (2686mV)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "00069d",
+    "peripheral": "adc",
+    "description": "Valid ADC: ch0 = 1693 (1364mV)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "030444",
+    "peripheral": "adc",
+    "description": "Valid ADC: ch3 = 1092 (880mV)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "040859",
+    "peripheral": "adc",
+    "description": "Valid ADC: ch4 = 2137 (1722mV)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "070650",
+    "peripheral": "adc",
+    "description": "Valid ADC: ch7 = 1616 (1302mV)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "060620",
+    "peripheral": "adc",
+    "description": "Valid ADC: ch6 = 1568 (1264mV)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "00061f",
+    "peripheral": "adc",
+    "description": "Valid ADC: ch0 = 1567 (1263mV)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "03089b",
+    "peripheral": "adc",
+    "description": "Valid ADC: ch3 = 2203 (1775mV)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "0309c2",
+    "peripheral": "adc",
+    "description": "Valid ADC: ch3 = 2498 (2013mV)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "000d9f",
+    "peripheral": "adc",
+    "description": "Valid ADC: ch0 = 3487 (2810mV)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "000bcc",
+    "peripheral": "adc",
+    "description": "Valid ADC: ch0 = 3020 (2434mV)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "0304f2",
+    "peripheral": "adc",
+    "description": "Valid ADC: ch3 = 1266 (1020mV)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "060a1b",
+    "peripheral": "adc",
+    "description": "Valid ADC: ch6 = 2587 (2085mV)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "060e3c",
+    "peripheral": "adc",
+    "description": "Valid ADC: ch6 = 3644 (2937mV)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "0103f4",
+    "peripheral": "adc",
+    "description": "Valid ADC: ch1 = 1012 (816mV)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "060282",
+    "peripheral": "adc",
+    "description": "Valid ADC: ch6 = 642 (517mV)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "0508a2",
+    "peripheral": "adc",
+    "description": "Valid ADC: ch5 = 2210 (1781mV)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "000e30",
+    "peripheral": "adc",
+    "description": "Valid ADC: ch0 = 3632 (2927mV)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "040792",
+    "peripheral": "adc",
+    "description": "Valid ADC: ch4 = 1938 (1562mV)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "050822",
+    "peripheral": "adc",
+    "description": "Valid ADC: ch5 = 2082 (1678mV)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "040543",
+    "peripheral": "adc",
+    "description": "Valid ADC: ch4 = 1347 (1085mV)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "040e11",
+    "peripheral": "adc",
+    "description": "Valid ADC: ch4 = 3601 (2902mV)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "030b59",
+    "peripheral": "adc",
+    "description": "Valid ADC: ch3 = 2905 (2341mV)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "010793",
+    "peripheral": "adc",
+    "description": "Valid ADC: ch1 = 1939 (1563mV)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "070961",
+    "peripheral": "adc",
+    "description": "Valid ADC: ch7 = 2401 (1935mV)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "060cf7",
+    "peripheral": "adc",
+    "description": "Valid ADC: ch6 = 3319 (2675mV)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "010b0c",
+    "peripheral": "adc",
+    "description": "Valid ADC: ch1 = 2828 (2279mV)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "01060a",
+    "peripheral": "adc",
+    "description": "Valid ADC: ch1 = 1546 (1246mV)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "040ac1",
+    "peripheral": "adc",
+    "description": "Valid ADC: ch4 = 2753 (2219mV)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "0208c1",
+    "peripheral": "adc",
+    "description": "Valid ADC: ch2 = 2241 (1806mV)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "01072d",
+    "peripheral": "adc",
+    "description": "Valid ADC: ch1 = 1837 (1480mV)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "060349",
+    "peripheral": "adc",
+    "description": "Valid ADC: ch6 = 841 (678mV)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "050268",
+    "peripheral": "adc",
+    "description": "Valid ADC: ch5 = 616 (496mV)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "030423",
+    "peripheral": "adc",
+    "description": "Valid ADC: ch3 = 1059 (853mV)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "040904",
+    "peripheral": "adc",
+    "description": "Valid ADC: ch4 = 2308 (1860mV)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "070bef",
+    "peripheral": "adc",
+    "description": "Valid ADC: ch7 = 3055 (2462mV)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "01039a",
+    "peripheral": "adc",
+    "description": "Valid ADC: ch1 = 922 (743mV)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "020587",
+    "peripheral": "adc",
+    "description": "Valid ADC: ch2 = 1415 (1140mV)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "0503d1",
+    "peripheral": "adc",
+    "description": "Valid ADC: ch5 = 977 (787mV)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "060aa7",
+    "peripheral": "adc",
+    "description": "Valid ADC: ch6 = 2727 (2198mV)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "070679",
+    "peripheral": "adc",
+    "description": "Valid ADC: ch7 = 1657 (1335mV)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "02071d",
+    "peripheral": "adc",
+    "description": "Valid ADC: ch2 = 1821 (1467mV)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "02037c",
+    "peripheral": "adc",
+    "description": "Valid ADC: ch2 = 892 (719mV)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "040c36",
+    "peripheral": "adc",
+    "description": "Valid ADC: ch4 = 3126 (2519mV)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "030c33",
+    "peripheral": "adc",
+    "description": "Valid ADC: ch3 = 3123 (2517mV)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "000865",
+    "peripheral": "adc",
+    "description": "Valid ADC: ch0 = 2149 (1732mV)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "050d9b",
+    "peripheral": "adc",
+    "description": "Valid ADC: ch5 = 3483 (2807mV)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "0202ab",
+    "peripheral": "adc",
+    "description": "Valid ADC: ch2 = 683 (550mV)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "000b05",
+    "peripheral": "adc",
+    "description": "Valid ADC: ch0 = 2821 (2273mV)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "010685",
+    "peripheral": "adc",
+    "description": "Valid ADC: ch1 = 1669 (1345mV)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "050625",
+    "peripheral": "adc",
+    "description": "Valid ADC: ch5 = 1573 (1268mV)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "020a82",
+    "peripheral": "adc",
+    "description": "Valid ADC: ch2 = 2690 (2168mV)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "000de8",
+    "peripheral": "adc",
+    "description": "Valid ADC: ch0 = 3560 (2869mV)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "000aee",
+    "peripheral": "adc",
+    "description": "Valid ADC: ch0 = 2798 (2255mV)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "000cb6",
+    "peripheral": "adc",
+    "description": "Valid ADC: ch0 = 3254 (2622mV)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "040595",
+    "peripheral": "adc",
+    "description": "Valid ADC: ch4 = 1429 (1152mV)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "050279",
+    "peripheral": "adc",
+    "description": "Valid ADC: ch5 = 633 (510mV)",
+    "category": "valid",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "030ffe",
+    "peripheral": "adc",
+    "description": "Boundary ADC: ch3 = 4094",
+    "category": "boundary",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "0207ff",
+    "peripheral": "adc",
+    "description": "Boundary ADC: ch2 = 2047",
+    "category": "boundary",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "010000",
+    "peripheral": "adc",
+    "description": "Boundary ADC: ch1 = 0",
+    "category": "boundary",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "070fff",
+    "peripheral": "adc",
+    "description": "Boundary ADC: ch7 = 4095",
+    "category": "boundary",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "0207ff",
+    "peripheral": "adc",
+    "description": "Boundary ADC: ch2 = 2047",
+    "category": "boundary",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "000fff",
+    "peripheral": "adc",
+    "description": "Boundary ADC: ch0 = 4095",
+    "category": "boundary",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "020fff",
+    "peripheral": "adc",
+    "description": "Boundary ADC: ch2 = 4095",
+    "category": "boundary",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "040001",
+    "peripheral": "adc",
+    "description": "Boundary ADC: ch4 = 1",
+    "category": "boundary",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "030ffe",
+    "peripheral": "adc",
+    "description": "Boundary ADC: ch3 = 4094",
+    "category": "boundary",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "020001",
+    "peripheral": "adc",
+    "description": "Boundary ADC: ch2 = 1",
+    "category": "boundary",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "0107ff",
+    "peripheral": "adc",
+    "description": "Boundary ADC: ch1 = 2047",
+    "category": "boundary",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "030000",
+    "peripheral": "adc",
+    "description": "Boundary ADC: ch3 = 0",
+    "category": "boundary",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "060001",
+    "peripheral": "adc",
+    "description": "Boundary ADC: ch6 = 1",
+    "category": "boundary",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "000000",
+    "peripheral": "adc",
+    "description": "Boundary ADC: ch0 = 0",
+    "category": "boundary",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "060ffe",
+    "peripheral": "adc",
+    "description": "Boundary ADC: ch6 = 4094",
+    "category": "boundary",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "030001",
+    "peripheral": "adc",
+    "description": "Boundary ADC: ch3 = 1",
+    "category": "boundary",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "040001",
+    "peripheral": "adc",
+    "description": "Boundary ADC: ch4 = 1",
+    "category": "boundary",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "070000",
+    "peripheral": "adc",
+    "description": "Boundary ADC: ch7 = 0",
+    "category": "boundary",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "020001",
+    "peripheral": "adc",
+    "description": "Boundary ADC: ch2 = 1",
+    "category": "boundary",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "0407ff",
+    "peripheral": "adc",
+    "description": "Boundary ADC: ch4 = 2047",
+    "category": "boundary",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "0707ff",
+    "peripheral": "adc",
+    "description": "Edge ADC: ch7 special pattern",
+    "category": "edge_case",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "010555",
+    "peripheral": "adc",
+    "description": "Edge ADC: ch1 special pattern",
+    "category": "edge_case",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "050555",
+    "peripheral": "adc",
+    "description": "Edge ADC: ch5 special pattern",
+    "category": "edge_case",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "050aaa",
+    "peripheral": "adc",
+    "description": "Edge ADC: ch5 special pattern",
+    "category": "edge_case",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "050555",
+    "peripheral": "adc",
+    "description": "Edge ADC: ch5 special pattern",
+    "category": "edge_case",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "010aaa",
+    "peripheral": "adc",
+    "description": "Edge ADC: ch1 special pattern",
+    "category": "edge_case",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "060001",
+    "peripheral": "adc",
+    "description": "Edge ADC: ch6 special pattern",
+    "category": "edge_case",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "020555",
+    "peripheral": "adc",
+    "description": "Edge ADC: ch2 special pattern",
+    "category": "edge_case",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "050aaa",
+    "peripheral": "adc",
+    "description": "Edge ADC: ch5 special pattern",
+    "category": "edge_case",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "070aaa",
+    "peripheral": "adc",
+    "description": "Edge ADC: ch7 special pattern",
+    "category": "edge_case",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "0107ff",
+    "peripheral": "adc",
+    "description": "Edge ADC: ch1 special pattern",
+    "category": "edge_case",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "040aaa",
+    "peripheral": "adc",
+    "description": "Edge ADC: ch4 special pattern",
+    "category": "edge_case",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "060ffe",
+    "peripheral": "adc",
+    "description": "Edge ADC: ch6 special pattern",
+    "category": "edge_case",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "020001",
+    "peripheral": "adc",
+    "description": "Edge ADC: ch2 special pattern",
+    "category": "edge_case",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "0107ff",
+    "peripheral": "adc",
+    "description": "Edge ADC: ch1 special pattern",
+    "category": "edge_case",
+    "expected_behavior": "accept"
+  },
+  {
+    "data": "080cbc",
+    "peripheral": "adc",
+    "description": "Invalid ADC: bad channel 8",
+    "category": "invalid",
+    "expected_behavior": "reject"
+  },
+  {
+    "data": "090371",
+    "peripheral": "adc",
+    "description": "Invalid ADC: bad channel 9",
+    "category": "invalid",
+    "expected_behavior": "reject"
+  },
+  {
+    "data": "090ac1",
+    "peripheral": "adc",
+    "description": "Invalid ADC: bad channel 9",
+    "category": "invalid",
+    "expected_behavior": "reject"
+  },
+  {
+    "data": "ff03e1",
+    "peripheral": "adc",
+    "description": "Invalid ADC: bad channel 255",
+    "category": "invalid",
+    "expected_behavior": "reject"
+  },
+  {
+    "data": "ff070a",
+    "peripheral": "adc",
+    "description": "Invalid ADC: bad channel 255",
+    "category": "invalid",
+    "expected_behavior": "reject"
+  }
+]

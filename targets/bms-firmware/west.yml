@@ -1,0 +1,34 @@
+# SPDX-License-Identifier: Apache-2.0
+
+manifest:
+  remotes:
+    - name: zephyrproject
+      url-base: https://github.com/zephyrproject-rtos
+    - name: libresolar
+      url-base: https://github.com/LibreSolar
+    - name: thingset
+      url-base: https://github.com/ThingSet
+    - name: throwtheswitch
+      url-base: https://github.com/ThrowTheSwitch
+  projects:
+    - name: zephyr
+      remote: zephyrproject
+      revision: v4.3-branch
+      import:
+        name-allowlist:
+          - cmsis_6
+          - edtt
+          - hal_espressif
+          - hal_stm32
+          - mbedtls
+          - mcuboot
+          - tinycrypt
+          - zcbor
+    - name: thingset-zephyr-sdk
+      remote: thingset
+      revision: 9784e05914a7b3270802c84c10f52a640c823348
+      path: thingset-zephyr-sdk
+      import:
+        name-allowlist:
+          - thingset-node-c
+          - zcbor

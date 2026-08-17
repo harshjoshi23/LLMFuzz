@@ -1,0 +1,32 @@
+/*
+ * Copyright (c) The Libre Solar Project Contributors
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+/ {
+	pcb {
+		version-str = "v0.4";
+		version-num = <4>;
+	};
+};
+
+&gpio0 {
+	deactivate-rs485 {
+		gpio-hog;
+		gpios = <6 GPIO_ACTIVE_HIGH>, <7 GPIO_ACTIVE_LOW>;
+		output-low;
+	};
+};
+
+&pinctrl {
+	i2c0_default: i2c0_default {
+		group1 {
+			pinmux = <I2C0_SDA_GPIO8>,
+				 <I2C0_SCL_GPIO9>;
+			bias-pull-up;
+			drive-open-drain;
+			output-high;
+		};
+	};
+};

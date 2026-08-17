@@ -1,0 +1,220 @@
+/*
+ * Copyright (c) The Libre Solar Project Contributors
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+/dts-v1/;
+#include <st/l0/stm32l072Xz.dtsi>
+#include <st/l0/stm32l072r(b-z)tx-pinctrl.dtsi>
+
+/ {
+	model = "Libre Solar PWM 2420 LUS";
+	compatible = "st,stm32l072";
+
+	pcb {
+		compatible = "charge-controller";
+
+		type = "PWM 2420 LUS";
+
+		hs-voltage-max = <55>;
+		ls-voltage-max = <32>;
+		// The MCU, where internal temperature is measured, is close to the MOSFETs. Tests
+		// showed that temperature at heat sink is only 10-20°C above measured internal
+		// temp. As PWM CC doesn't use electrolytic cap for core charging function,
+		// internal temperature of 70°C can be allowed (instead of default 50°C).
+		internal-tref-max = <70>;
+	};
+
+	chosen {
+		thingset,serial = &usart2;
+		zephyr,console = &usart1;
+		zephyr,shell-uart = &usart1;
+		zephyr,sram = &sram0;
+		zephyr,flash = &flash0;
+	};
+
+	leds {
+		compatible = "charlieplexing-leds";
+		gpios = <&gpiob 13 GPIO_ACTIVE_HIGH>,	/* Pin A */
+			<&gpiob 14 GPIO_ACTIVE_HIGH>,	/* Pin B */
+			<&gpiob 15 GPIO_ACTIVE_HIGH>;	/* Pin C */
+
+		soc_1 {
+			states = <1 0 2>;
+		};
+
+		soc_2 {
+			states = <0 1 2>;
+		};
+
+		soc_3 {
+			states = <1 2 0>;
+		};
+
+		load {
+			states = <2 1 0>;
+		};
+
+		rxtx {
+			states = <2 0 1>;
+		};
+	};
+
+	outputs {
+		compatible = "outputs";
+
+		pwm_switch {
+			pwms = <&pwm3 4 (20*1000*1000) PWM_POLARITY_NORMAL>; /* 20 ms period = 50 Hz */
+			// Current reduced to 15A. Increase to 20A PCB max values
+			// only if attached to a big heat sink.
+			current-max = <15>;
+			kconfig-flag;	/* make node visible in Kconfig */
+		};
+
+		load {
+			gpios = <&gpiob 2 GPIO_ACTIVE_LOW>;
+			current-max = <15>;
+			kconfig-flag;	/* make node visible in Kconfig */
+		};
+
+		usb-pwr {
+			gpios = <&gpiob 5 GPIO_ACTIVE_LOW>;
+		};
+
+		boot0 {
+			gpios = <&gpiob 12 GPIO_ACTIVE_HIGH>;
+		};
+	};
+
+	adc-inputs {
+		compatible = "adc-inputs";
+
+		v-low {
+			io-channels = <&adc1 0>;
+			multiplier = <132000>;
+			divider = <12000>;
+		};
+
+		v-pwm {
+			io-channels = <&adc1 1>;
+			multiplier = <25224>;	// (12*8.2 + 120*8.2 + 120*12) * 10
+			divider = <984>;	// (8.2*12) * 10
+			offset = <37414>;	// 65536 / (1 + 8.2/120 + 8.2/12)
+		};
+
+		i-load {
+			io-channels = <&adc1 5>;
+			// amp gain: 68/2.2, resistor: 2 mOhm
+			// fix for hardware bug in overcurrent comparator voltage divider wiring
+			multiplier = <2931>;	// 1000 * (39+12+8.2) / (12+8.2) = 2930.69
+			divider = <62>;	// 2*68/2.2 = 61.8181
+		};
+
+		i-pwm {
+			io-channels = <&adc1 6>;
+			// amp gain: 68/2.2, resistor: 2 mOhm
+			multiplier = <2200>;	// 1000*2.2
+			divider = <136>;	// 2*68
+		};
+
+		temp-bat {
+			io-channels = <&adc1 7>;
+			multiplier = <8200>;	// 8.2k NTC series resistor
+			divider = <1>;
+		};
+
+		vref-mcu {
+			io-channels = <&adc1 17>;
+			multiplier = <1>;
+			divider = <1>;
+		};
+
+		temp-mcu {
+			io-channels = <&adc1 18>;
+			multiplier = <1>;
+			divider = <1>;
+		};
+	};
+
+	aliases {
+		uart-dbg = &usart1;
+		uart-uext = &usart2;
+		spi-uext = &spi1;
+		i2c-uext = &i2c1;
+	};
+};
+
+&clk_hsi {
+	status = "okay";
+};
+
+&pll {
+	div = <2>;
+	mul = <4>;
+	clocks = <&clk_hsi>;
+	status = "okay";
+};
+
+&rcc {
+	clocks = <&pll>;
+	clock-frequency = <DT_FREQ_M(32)>;
+	ahb-prescaler = <1>;
+	apb1-prescaler = <1>;
+	apb2-prescaler = <1>;
+};
+
+&usart1 {
+	pinctrl-0 = <&usart1_tx_pa9 &usart1_rx_pa10>;
+	pinctrl-names = "default";
+	current-speed = <115200>;
+	status = "okay";
+};
+
+&usart1_rx_pa10 {
+	bias-pull-up;	// avoid junk characters if pin is left floating
+};
+
+
+&usart2 {
+	pinctrl-0 = <&usart2_tx_pa2 &usart2_rx_pa3>;
+	pinctrl-names = "default";
+	current-speed = <115200>;
+	status = "okay";
+};
+
+&usart2_rx_pa3 {
+	bias-pull-up;	// avoid junk characters if pin is left floating
+};
+
+&i2c1 {
+	pinctrl-0 = <&i2c1_scl_pb6 &i2c1_sda_pb7>;
+	pinctrl-names = "default";
+	status = "okay";
+	clock-frequency = <I2C_BITRATE_FAST>;
+};
+
+&spi1 {
+	pinctrl-0 = <&spi1_sck_pb3 &spi1_miso_pa11 &spi1_mosi_pa12>;
+	pinctrl-names = "default";
+	cs-gpios = <&gpioa 15 GPIO_ACTIVE_LOW>;
+	status = "okay";
+};
+
+&iwdg {
+	status = "okay";
+};
+
+&timers3 {
+	status = "okay";
+	st,prescaler = <10000>;
+	pwm3: pwm {
+		status = "okay";
+		pinctrl-0 = <&tim3_ch4_pb1>;
+		pinctrl-names = "default";
+	};
+};
+
+&eeprom {
+	status = "okay";
+};

@@ -1,0 +1,28 @@
+# Core Dependencies for AI-Enhanced Fuzzing Framework
+openai>=1.52.0          # GPT4IFX API client
+httpx>=0.26.0           # HTTP client with certificate support
+faiss-cpu>=1.7.4        # Vector database for RAG
+langchain>=0.3.2        # RAG pipeline utilities
+pydantic>=2.7.0         # Data validation schemas
+tiktoken>=0.7.0         # Token counting
+rich>=13.7.0            # Beautiful terminal output
+
+# PDF Processing (for datasheet chunking)
+PyPDF2>=3.0.0           # PDF text extraction
+pdfplumber>=0.10.0      # Alternative PDF parser
+
+# Data Processing
+numpy>=1.24.0           # Numerical operations
+pandas>=2.0.0           # Data manipulation
+
+# Configuration
+pyyaml>=6.0             # YAML config files
+python-dotenv>=1.0.0    # Environment variables
+
+# Office document processing
+python-docx>=0.8.11      # .docx text extraction for firmware docs
+
+# Testing & Validation
+pytest>=7.4.0           # Unit tests
+pytest-asyncio>=0.21.0  # Async tests
+

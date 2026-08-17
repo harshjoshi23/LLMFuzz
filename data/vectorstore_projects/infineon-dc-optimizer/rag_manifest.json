@@ -1,0 +1,19 @@
+{
+  "files": {
+    "README.md": {
+      "size": 34808,
+      "mtime": 1777325439,
+      "sha256": "3c6c748d2e30d9070833fb4c85b04dcac9e884a1e7bc90bebd0abcf5046b5ae8"
+    },
+    "firmware_magic_constants.md": {
+      "size": 3121,
+      "mtime": 1780634598,
+      "sha256": "764a7b534bcc33342e45afdbaa519214da9353f7844e69244cde250aececb7da"
+    },
+    "mtb-pwrctrl-Paramter_Limits.xlsx.txt": {
+      "size": 14891,
+      "mtime": 1780668366,
+      "sha256": "2e60132bc74c302a9d87541eee93cb765856adb5d53976714104c4ffa14ec720"
+    }
+  }
+}

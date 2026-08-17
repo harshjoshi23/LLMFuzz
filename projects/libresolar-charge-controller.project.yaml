@@ -1,0 +1,55 @@
+project:
+  name: libresolar-charge-controller
+  target_path: targets/charge-controller-firmware
+
+docs:
+- type: local
+  # Paths are resolved relative to project.target_path.
+  path: .
+- type: local
+
+rag:
+  index_dir: data/vectorstore_projects/libresolar-charge-controller
+
+fuzz:
+  protocol: i2c
+  topics:
+    # Battery charging parameter registers
+    - "charge controller absorption voltage register mV"
+    - "charge controller float voltage register mV"
+    - "charge controller max charge current register mA"
+    - "tail current end of absorption threshold mA"
+    - "battery type flooded gel AGM LiFePO4 register"
+    - "cell count series battery register"
+    - "deep discharge cutoff voltage register mV"
+    # MPPT / solar panel registers (SLVA446)
+    - "MPPT enable register perturb observe incremental conductance"
+    - "MPPT PWM duty cycle register percent"
+    - "MPPT algorithm selection P&O IncCond constant voltage"
+    - "MPPT voltage step size perturbation mV"
+    - "panel open circuit voltage estimate mV"
+    - "PWM switching frequency 20kHz 40kHz 80kHz register"
+    - "panel overvoltage protection threshold register"
+    # Load output registers
+    - "load output enable disable register"
+    - "load overcurrent protection threshold mA"
+    - "load low voltage disconnect LVD register mV"
+    # Calibration unlock sequence
+    - "charge controller calibration unlock 0xCA 0xFE sequence"
+    - "voltage calibration offset register"
+    - "current calibration gain register"
+  duration_seconds: 3600
+  seed_count: 50
+  framing: raw
+  harness:
+    type: afl_c_harness
+    c_file: src/harness/fuzz_charge_controller_protocol.c
+
+scenarios:
+  expected: []
+  signals: []
+
+discovery:
+  enabled: true
+  budget_seconds: 180
+  allow_baseline_harness_fallback: true

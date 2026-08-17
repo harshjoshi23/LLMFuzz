@@ -1,0 +1,11 @@
+board:
+  name: mppt_1210_hus
+  vendor: libresolar
+  socs:
+    - name: stm32l072xx
+  revision:
+    format: major.minor.patch
+    default: "0.7.0"
+    revisions:
+      - name: "0.4.0"
+      - name: "0.7.0"

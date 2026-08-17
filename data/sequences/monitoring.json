@@ -1,0 +1,182 @@
+[
+  {
+    "index": 0,
+    "address": "0x20",
+    "command": "0x88",
+    "command_name": "READ_VIN",
+    "write_data": "",
+    "expected_response": "cccd",
+    "description": "Read VIN (sample 1)"
+  },
+  {
+    "index": 1,
+    "address": "0x20",
+    "command": "0x8B",
+    "command_name": "READ_VOUT",
+    "write_data": "",
+    "expected_response": "18c5",
+    "description": "Read VOUT (sample 1)"
+  },
+  {
+    "index": 2,
+    "address": "0x20",
+    "command": "0x8C",
+    "command_name": "READ_IOUT",
+    "write_data": "",
+    "expected_response": "e7b7",
+    "description": "Read IOUT (sample 1)"
+  },
+  {
+    "index": 3,
+    "address": "0x20",
+    "command": "0x8D",
+    "command_name": "READ_TEMPERATURE_1",
+    "write_data": "",
+    "expected_response": "a0de",
+    "description": "Read TEMP (sample 1)"
+  },
+  {
+    "index": 4,
+    "address": "0x20",
+    "command": "0x88",
+    "command_name": "READ_VIN",
+    "write_data": "",
+    "expected_response": "08ce",
+    "description": "Read VIN (sample 2)"
+  },
+  {
+    "index": 5,
+    "address": "0x20",
+    "command": "0x8B",
+    "command_name": "READ_VOUT",
+    "write_data": "",
+    "expected_response": "0fc5",
+    "description": "Read VOUT (sample 2)"
+  },
+  {
+    "index": 6,
+    "address": "0x20",
+    "command": "0x8C",
+    "command_name": "READ_IOUT",
+    "write_data": "",
+    "expected_response": "0cbc",
+    "description": "Read IOUT (sample 2)"
+  },
+  {
+    "index": 7,
+    "address": "0x20",
+    "command": "0x8D",
+    "command_name": "READ_TEMPERATURE_1",
+    "write_data": "",
+    "expected_response": "60de",
+    "description": "Read TEMP (sample 2)"
+  },
+  {
+    "index": 8,
+    "address": "0x20",
+    "command": "0x88",
+    "command_name": "READ_VIN",
+    "write_data": "",
+    "expected_response": "34ce",
+    "description": "Read VIN (sample 3)"
+  },
+  {
+    "index": 9,
+    "address": "0x20",
+    "command": "0x8B",
+    "command_name": "READ_VOUT",
+    "write_data": "",
+    "expected_response": "03c5",
+    "description": "Read VOUT (sample 3)"
+  },
+  {
+    "index": 10,
+    "address": "0x20",
+    "command": "0x8C",
+    "command_name": "READ_IOUT",
+    "write_data": "",
+    "expected_response": "c1b7",
+    "description": "Read IOUT (sample 3)"
+  },
+  {
+    "index": 11,
+    "address": "0x20",
+    "command": "0x8D",
+    "command_name": "READ_TEMPERATURE_1",
+    "write_data": "",
+    "expected_response": "e0de",
+    "description": "Read TEMP (sample 3)"
+  },
+  {
+    "index": 12,
+    "address": "0x20",
+    "command": "0x88",
+    "command_name": "READ_VIN",
+    "write_data": "",
+    "expected_response": "dbcd",
+    "description": "Read VIN (sample 4)"
+  },
+  {
+    "index": 13,
+    "address": "0x20",
+    "command": "0x8B",
+    "command_name": "READ_VOUT",
+    "write_data": "",
+    "expected_response": "04c5",
+    "description": "Read VOUT (sample 4)"
+  },
+  {
+    "index": 14,
+    "address": "0x20",
+    "command": "0x8C",
+    "command_name": "READ_IOUT",
+    "write_data": "",
+    "expected_response": "58bc",
+    "description": "Read IOUT (sample 4)"
+  },
+  {
+    "index": 15,
+    "address": "0x20",
+    "command": "0x8D",
+    "command_name": "READ_TEMPERATURE_1",
+    "write_data": "",
+    "expected_response": "e0de",
+    "description": "Read TEMP (sample 4)"
+  },
+  {
+    "index": 16,
+    "address": "0x20",
+    "command": "0x88",
+    "command_name": "READ_VIN",
+    "write_data": "",
+    "expected_response": "cbcd",
+    "description": "Read VIN (sample 5)"
+  },
+  {
+    "index": 17,
+    "address": "0x20",
+    "command": "0x8B",
+    "command_name": "READ_VOUT",
+    "write_data": "",
+    "expected_response": "f9c4",
+    "description": "Read VOUT (sample 5)"
+  },
+  {
+    "index": 18,
+    "address": "0x20",
+    "command": "0x8C",
+    "command_name": "READ_IOUT",
+    "write_data": "",
+    "expected_response": "63bc",
+    "description": "Read IOUT (sample 5)"
+  },
+  {
+    "index": 19,
+    "address": "0x20",
+    "command": "0x8D",
+    "command_name": "READ_TEMPERATURE_1",
+    "write_data": "",
+    "expected_response": "60de",
+    "description": "Read TEMP (sample 5)"
+  }
+]

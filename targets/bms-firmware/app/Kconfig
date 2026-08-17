@@ -1,0 +1,46 @@
+# Copyright (c) The Libre Solar Project Contributors
+# SPDX-License-Identifier: Apache-2.0
+
+mainmenu "Libre Solar Battery Management System Firmware"
+
+menu "Battery default settings"
+
+config BAT_CAPACITY_AH
+    int "Battery nominal capacity in Ah"
+    range 10 1000
+    default 50
+    help
+      Nominal battery capacity or sum of parallel cells capacity
+
+choice
+    prompt "Default cell type"
+    default CELL_TYPE_LFP
+    help
+      Select the type of the single cells inside the battery
+      to determine voltage set points. Total voltage set points
+      are multiplied with the selected number of cells.
+
+      The default values based on this configuration can be overriden via ThingSet.
+
+    config CELL_TYPE_LFP
+        bool "LiFePO4, 3.3V nominal"
+
+    config CELL_TYPE_NMC
+        bool "NMC/Graphite, 3.7V nominal, 4.2V max"
+
+    config CELL_TYPE_LTO
+        bool "NMC/Titanate, 2.4 V nominal"
+
+endchoice
+
+# values must match enum CellType in bms.h
+config CELL_TYPE
+    int
+    default 0 if CELL_TYPE_LFP
+    default 1 if CELL_TYPE_NMC
+    default 2 if CELL_TYPE_LTO
+
+endmenu
+
+# include main Zephyr menu entries from Zephyr root directory
+source "Kconfig.zephyr"

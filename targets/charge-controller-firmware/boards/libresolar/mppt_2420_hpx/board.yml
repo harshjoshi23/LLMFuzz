@@ -1,0 +1,5 @@
+board:
+  name: mppt_2420_hpx
+  vendor: libresolar
+  socs:
+    - name: stm32g431xx

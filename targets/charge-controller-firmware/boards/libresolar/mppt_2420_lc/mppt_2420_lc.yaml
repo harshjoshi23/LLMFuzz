@@ -1,0 +1,17 @@
+identifier: mppt_2420_lc
+name: MPPT-2420-LC
+type: mcu
+arch: arm
+toolchain:
+  - zephyr
+  - gnuarmemb
+  - xtools
+ram: 16
+flash: 128
+supported:
+  - arduino_i2c
+  - gpio
+  - i2c
+  - spi
+  - watchdog
+  - adc

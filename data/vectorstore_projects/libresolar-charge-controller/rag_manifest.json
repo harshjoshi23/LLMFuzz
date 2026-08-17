@@ -1,0 +1,149 @@
+{
+  "files": {
+    "CMakeLists.txt": {
+      "size": 128,
+      "mtime": 1777325443,
+      "sha256": "c04ae794debf3839a224cd3d60d8ecb7941ea0a016872c71e1487b047f189f46"
+    },
+    "CODE_OF_CONDUCT.md": {
+      "size": 3351,
+      "mtime": 1777325443,
+      "sha256": "47998342c7d85f3f9d0c235ab9eb95a9d5f5899fc8424aaafc0072a90d8bd70d"
+    },
+    "CONTRIBUTING.md": {
+      "size": 2356,
+      "mtime": 1777325443,
+      "sha256": "55c36028cf6b51626786899cae2dd7e457b82440e6081ac690c5ad48445d3ce8"
+    },
+    "README.md": {
+      "size": 1295,
+      "mtime": 1777325443,
+      "sha256": "f5640c399327337db30ab3618f7a98b6a021f80ca1dc0b4328d116c5d620e75a"
+    },
+    "README__1.md": {
+      "size": 1295,
+      "mtime": 1778104381,
+      "sha256": "f5640c399327337db30ab3618f7a98b6a021f80ca1dc0b4328d116c5d620e75a"
+    },
+    "app_CMakeLists.txt": {
+      "size": 641,
+      "mtime": 1777325443,
+      "sha256": "ddb8f3fb27f5015827362d3ad2e109a364c5e02cef37f5421a69341a6bc33f6e"
+    },
+    "app_src_CMakeLists.txt": {
+      "size": 804,
+      "mtime": 1777325443,
+      "sha256": "6a92b0bce13baabba825c32fdb18e17e908224f9bb4d99f725bc504b40b01311"
+    },
+    "docs_README.md": {
+      "size": 476,
+      "mtime": 1777325443,
+      "sha256": "78a7ba22395edd9e628bdf6be90b7856b7092ee507900d37bea08d310cb3f81c"
+    },
+    "docs_index.rst": {
+      "size": 1344,
+      "mtime": 1777325443,
+      "sha256": "b9003a26b8ef2786d4c013602edec07dd5b350d7795052901ee938cda21aaf24"
+    },
+    "docs_requirements.txt": {
+      "size": 70,
+      "mtime": 1777325443,
+      "sha256": "0f45da79ce1e5800fbd805b6c7b9c7f428bf4c44a084562772c32fe764fe0268"
+    },
+    "docs_src_api_bat_charger.rst": {
+      "size": 81,
+      "mtime": 1777325443,
+      "sha256": "dd0f193a3b231eacc9875000b61cdcaa347c56b7a82f512c7b0ba5d3d71eb48a"
+    },
+    "docs_src_api_daq.rst": {
+      "size": 75,
+      "mtime": 1777325443,
+      "sha256": "1d573a83c847cc6ec7e56ea4b1c67b8cef49f5e137460b8432d4f5508e1c6bf4"
+    },
+    "docs_src_api_data_objects.rst": {
+      "size": 291,
+      "mtime": 1777325443,
+      "sha256": "857bf48ea3c638548d31628225e3e27b15c81644bc00acc248066acf0ce9107a"
+    },
+    "docs_src_api_dcdc.rst": {
+      "size": 74,
+      "mtime": 1777325443,
+      "sha256": "cb446e31b85efe9ab37117bb50f66bc30527cbc80d7ec7802c3f9b752763eb55"
+    },
+    "docs_src_api_device_status.rst": {
+      "size": 79,
+      "mtime": 1777325443,
+      "sha256": "3f33c45cecf83614c2671decc2528e26c4d44d6b9e4910c7baee2005e7045a94"
+    },
+    "docs_src_api_half_bridge.rst": {
+      "size": 87,
+      "mtime": 1777325443,
+      "sha256": "96469dbfc64346a3003406b2c4c8df4350a15030cca78e137d716e6f7ef1dc5e"
+    },
+    "docs_src_api_load.rst": {
+      "size": 66,
+      "mtime": 1777325443,
+      "sha256": "16e6af1cbe3c1f7b1fd1109cdc781537f19bae1c8990c4538000eae78fea3b0c"
+    },
+    "docs_src_api_misc.rst": {
+      "size": 320,
+      "mtime": 1777325443,
+      "sha256": "977713e151cbffb38234b9a7b54c0326d0396b3b22b587b99583439fd2d2cade"
+    },
+    "docs_src_api_power_port.rst": {
+      "size": 92,
+      "mtime": 1777325443,
+      "sha256": "c0d2f39c3791363b587721deca316455b5b4be43bf5bf5ad19f4b19fdbe6de0a"
+    },
+    "docs_src_api_pwm_switch.rst": {
+      "size": 70,
+      "mtime": 1777325443,
+      "sha256": "241052975cd643b4187aa3fde747a53be58656809103e76a4decfcd810b7d551"
+    },
+    "docs_src_dev_building_flashing.rst": {
+      "size": 1062,
+      "mtime": 1777325443,
+      "sha256": "a72f065634a1c39f9a6986e89649b74c37b859b998a41586cbed5c122d8879cc"
+    },
+    "docs_src_dev_customization.rst": {
+      "size": 3683,
+      "mtime": 1777325443,
+      "sha256": "90732153615f2eabf4cc92398071eedc2a0e1247fcb0bcdc249d167e64cf2262"
+    },
+    "docs_src_dev_troubleshooting.rst": {
+      "size": 876,
+      "mtime": 1777325443,
+      "sha256": "56c8faca96876df900572db275e7956b4dd7f528a4df67f4075c000752221134"
+    },
+    "docs_src_dev_unit_tests.rst": {
+      "size": 614,
+      "mtime": 1777325443,
+      "sha256": "8a1c5ad2e868fdfab96d185216e89b611b9793b1c0562ea98b8804f2725e08c5"
+    },
+    "docs_src_dev_workspace_setup.rst": {
+      "size": 2012,
+      "mtime": 1777325443,
+      "sha256": "b82b5bb90d4946215a4d901dc02cc936a21c3299a16e5025f15c52195ad734f3"
+    },
+    "docs_src_overview_charger_concepts.rst": {
+      "size": 3413,
+      "mtime": 1777325443,
+      "sha256": "b3a80d1576613297878c515e80d996608b9d0fd6168aa8f6e5f585e6bb4f8d8a"
+    },
+    "docs_src_overview_features.rst": {
+      "size": 577,
+      "mtime": 1777325443,
+      "sha256": "47e151860ef1eb97e7ef99cfe764df0439da97efad3b2df58eb36ad0c25e2fed"
+    },
+    "docs_src_overview_supported_hardware.rst": {
+      "size": 1259,
+      "mtime": 1777325443,
+      "sha256": "151b40c1de7ae9a16814d14cca6ffcaec54caa2a77b7df0c9fda25c1333ea4f0"
+    },
+    "tests_CMakeLists.txt": {
+      "size": 1400,
+      "mtime": 1777325443,
+      "sha256": "c1cdc072e80a7dceeeec18f0aa077eaad61047b780e4b12a75e7c5924b55d0df"
+    }
+  }
+}

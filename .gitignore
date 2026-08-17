@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Secrets and local config (never commit)
+.env
+.env.local
+.env.prod
+key.txt
+ca-bundle.crt
+*.pem
+
+# Campaign output
+results/
+findings/
+*.profraw
+
+# Compiled AFL harness binaries (rebuild with src/harness/build_harnesses.sh)
+src/harness/fuzz_i2c
+src/harness/fuzz_pmbus
+src/harness/fuzz_state
+src/harness/fuzz_*_asan
+src/harness/fuzz_*_debug
+src/harness/fuzz_*_cov
+
+# Build artifacts
+build/
+*.o
+*.elf
+*.gcno
+*.gcda
+*.gcov
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# Proprietary documentation (use your own docs when re-indexing)
+data/datasheets/
+
+# Deprecated internal archives
+_deprecated_*/

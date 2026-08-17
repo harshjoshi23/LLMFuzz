@@ -1,0 +1,182 @@
+[
+  {
+    "index": 0,
+    "address": "0x20",
+    "command": "0x79",
+    "command_name": "STATUS_WORD",
+    "write_data": "",
+    "expected_response": "4000",
+    "description": "Stress: Read STATUS_WORD"
+  },
+  {
+    "index": 1,
+    "address": "0x20",
+    "command": "0x8D",
+    "command_name": "READ_TEMPERATURE_1",
+    "write_data": "",
+    "expected_response": "60de",
+    "description": "Stress: Read READ_TEMPERATURE_1"
+  },
+  {
+    "index": 2,
+    "address": "0x20",
+    "command": "0x8E",
+    "command_name": "READ_TEMPERATURE_2",
+    "write_data": "",
+    "expected_response": "60de",
+    "description": "Stress: Read READ_TEMPERATURE_2"
+  },
+  {
+    "index": 3,
+    "address": "0x20",
+    "command": "0x8D",
+    "command_name": "READ_TEMPERATURE_1",
+    "write_data": "",
+    "expected_response": "60de",
+    "description": "Stress: Read READ_TEMPERATURE_1"
+  },
+  {
+    "index": 4,
+    "address": "0x20",
+    "command": "0x43",
+    "command_name": "VOUT_UV_WARN_LIMIT",
+    "write_data": "",
+    "expected_response": "000e",
+    "description": "Stress: Read VOUT_UV_WARN_LIMIT"
+  },
+  {
+    "index": 5,
+    "address": "0x20",
+    "command": "0x55",
+    "command_name": "VIN_OV_FAULT_LIMIT",
+    "write_data": "4f37",
+    "expected_response": "",
+    "description": "Stress: Write VIN_OV_FAULT_LIMIT"
+  },
+  {
+    "index": 6,
+    "address": "0x20",
+    "command": "0x46",
+    "command_name": "IOUT_OC_FAULT_LIMIT",
+    "write_data": "",
+    "expected_response": "0028",
+    "description": "Stress: Read IOUT_OC_FAULT_LIMIT"
+  },
+  {
+    "index": 7,
+    "address": "0x20",
+    "command": "0x79",
+    "command_name": "STATUS_WORD",
+    "write_data": "",
+    "expected_response": "4000",
+    "description": "Stress: Read STATUS_WORD"
+  },
+  {
+    "index": 8,
+    "address": "0x20",
+    "command": "0x55",
+    "command_name": "VIN_OV_FAULT_LIMIT",
+    "write_data": "224d",
+    "expected_response": "",
+    "description": "Stress: Write VIN_OV_FAULT_LIMIT"
+  },
+  {
+    "index": 9,
+    "address": "0x20",
+    "command": "0x7A",
+    "command_name": "STATUS_VOUT",
+    "write_data": "",
+    "expected_response": "00",
+    "description": "Stress: Read STATUS_VOUT"
+  },
+  {
+    "index": 10,
+    "address": "0x20",
+    "command": "0x7D",
+    "command_name": "STATUS_TEMPERATURE",
+    "write_data": "",
+    "expected_response": "00",
+    "description": "Stress: Read STATUS_TEMPERATURE"
+  },
+  {
+    "index": 11,
+    "address": "0x20",
+    "command": "0x78",
+    "command_name": "STATUS_BYTE",
+    "write_data": "",
+    "expected_response": "40",
+    "description": "Stress: Read STATUS_BYTE"
+  },
+  {
+    "index": 12,
+    "address": "0x20",
+    "command": "0x4A",
+    "command_name": "IOUT_OC_WARN_LIMIT",
+    "write_data": "",
+    "expected_response": "0020",
+    "description": "Stress: Read IOUT_OC_WARN_LIMIT"
+  },
+  {
+    "index": 13,
+    "address": "0x20",
+    "command": "0x7D",
+    "command_name": "STATUS_TEMPERATURE",
+    "write_data": "",
+    "expected_response": "00",
+    "description": "Stress: Read STATUS_TEMPERATURE"
+  },
+  {
+    "index": 14,
+    "address": "0x20",
+    "command": "0x78",
+    "command_name": "STATUS_BYTE",
+    "write_data": "",
+    "expected_response": "40",
+    "description": "Stress: Read STATUS_BYTE"
+  },
+  {
+    "index": 15,
+    "address": "0x20",
+    "command": "0x7C",
+    "command_name": "STATUS_INPUT",
+    "write_data": "",
+    "expected_response": "00",
+    "description": "Stress: Read STATUS_INPUT"
+  },
+  {
+    "index": 16,
+    "address": "0x20",
+    "command": "0x46",
+    "command_name": "IOUT_OC_FAULT_LIMIT",
+    "write_data": "56b2",
+    "expected_response": "",
+    "description": "Stress: Write IOUT_OC_FAULT_LIMIT"
+  },
+  {
+    "index": 17,
+    "address": "0x20",
+    "command": "0x01",
+    "command_name": "OPERATION",
+    "write_data": "a0",
+    "expected_response": "",
+    "description": "Stress: Write OPERATION"
+  },
+  {
+    "index": 18,
+    "address": "0x20",
+    "command": "0x19",
+    "command_name": "CAPABILITY",
+    "write_data": "",
+    "expected_response": "00",
+    "description": "Stress: Read CAPABILITY"
+  },
+  {
+    "index": 19,
+    "address": "0x20",
+    "command": "0x88",
+    "command_name": "READ_VIN",
+    "write_data": "",
+    "expected_response": "cbcd",
+    "description": "Stress: Read READ_VIN"
+  }
+]

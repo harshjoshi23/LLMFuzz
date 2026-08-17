@@ -1,0 +1,50 @@
+project:
+  name: libresolar-bms
+  target_path: targets/bms-firmware
+
+docs:
+- type: local
+  # Paths are resolved relative to project.target_path.
+  path: .
+- type: local
+
+rag:
+  index_dir: data/vectorstore_projects/libresolar-bms
+
+fuzz:
+  protocol: i2c
+  topics:
+    # BQ76952 direct-command registers (Section 7.6 SLUSDO6B)
+    - "BQ76952 cell voltage direct command register address"
+    - "BQ76952 stack voltage pack voltage register"
+    - "BQ76952 CC2 current measurement register"
+    - "BQ76952 temperature TS1 TS3 internal register"
+    - "BQ76952 safety status register SFA SFB SFC"
+    - "BQ76952 FET control CHG DSG enable register"
+    # BQ76952 subcommand settings (require SET_CFGUPDATE 0x0090)
+    - "BQ76952 SET_CFGUPDATE subcommand 0x0090 configuration mode"
+    - "BQ76952 OV threshold overvoltage protection mV register 0x9180"
+    - "BQ76952 UV threshold undervoltage protection mV register 0x9184"
+    - "BQ76952 OCC overcurrent charge threshold mA register 0x9188"
+    - "BQ76952 OCD1 overcurrent discharge threshold mA register 0x918A"
+    - "BQ76952 SCD short circuit discharge threshold register 0x918C"
+    - "BQ76952 cell balancing CB_ACTIVE register 0x9218"
+    - "BQ76952 cell count configuration register 0x9304"
+    - "BQ76952 alarm mask register 0x926D"
+    # BQ76952 UNSEAL key sequence
+    - "BQ76952 UNSEAL key 0x0414 0x3672 security access"
+  duration_seconds: 3600
+  seed_count: 50
+  framing: raw
+  harness:
+    type: afl_c_harness
+    c_file: src/harness/fuzz_bms_protocol.c
+
+scenarios:
+  expected: []
+  signals: []
+
+discovery:
+  enabled: true
+  budget_seconds: 180
+  allow_baseline_harness_fallback: true

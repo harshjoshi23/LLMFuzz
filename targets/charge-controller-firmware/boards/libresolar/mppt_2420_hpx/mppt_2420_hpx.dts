@@ -1,0 +1,277 @@
+/*
+ * Copyright (c) The Libre Solar Project Contributors
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+/dts-v1/;
+#include <st/g4/stm32g431Xb.dtsi>
+#include <st/g4/stm32g431r(6-8-b)tx-pinctrl.dtsi>
+
+/ {
+	model = "Libre Solar MPPT 2420 HPX";
+	compatible = "st,stm32g431";
+
+	pcb {
+		compatible = "charge-controller";
+
+		type = "MPPT 2420 HPX";
+		version-str = "v0.1";
+		version-num = <1>;
+
+		hs-voltage-max = <80>;
+		ls-voltage-max = <32>;
+		dcdc-current-max = <20>;
+	};
+
+	chosen {
+		thingset,serial = &usart3;
+		zephyr,console = &usart1;
+		zephyr,shell-uart = &usart1;
+		zephyr,sram = &sram0;
+		zephyr,flash = &flash0;
+	};
+
+	leds {
+		compatible = "charlieplexing-leds";
+		gpios = <&gpioc 15 GPIO_ACTIVE_HIGH>;
+
+		pwr {
+			states = <1>;
+		};
+	};
+
+	outputs {
+		compatible = "outputs";
+
+		pwm_switch {
+			pwms = <&pwm3 2 (20*1000*1000) PWM_POLARITY_NORMAL>; /* 20 ms period = 50 Hz */
+			current-max = <20>;
+			kconfig-flag;	/* make node visible in Kconfig */
+		};
+
+		load {
+			gpios = <&gpiob 15 GPIO_ACTIVE_LOW>;
+			current-max = <20>;
+			kconfig-flag;	/* make node visible in Kconfig */
+		};
+
+		charge_pump {
+			pwms = <&pwm8 1 200000 PWM_POLARITY_NORMAL>; /* 200 us period = 5 kHz */
+		};
+
+		hv-out {
+			gpios = <&gpiob 12 GPIO_ACTIVE_LOW>;
+		};
+	};
+
+	adc-inputs {
+		compatible = "adc-inputs";
+
+		v-low {
+			io-channels = <&adc1 12>;
+			multiplier = <105600>;
+			divider = <5600>;
+		};
+
+		v-high {
+			io-channels = <&adc1 15>;
+			multiplier = <102200>;
+			divider = <2200>;
+		};
+
+		hv-ext-sense {
+			io-channels = <&adc1 11>;
+			multiplier = <1>;
+			divider = <1>;
+		};
+
+		v-pwm {
+			io-channels = <&adc1 4>;
+			multiplier = <25224>;	// (12*8.2 + 120*8.2 + 120*12) * 10
+			divider = <984>;	// (8.2*12) * 10
+			offset = <37414>;	// 65536 / (1 + 8.2/120 + 8.2/12)
+		};
+
+		temp-fets {
+			io-channels = <&adc1 6>;
+			multiplier = <10000>;	// 10k NTC series resistor
+			divider = <1>;
+		};
+
+		vref-mcu {
+			io-channels = <&adc1 18>;
+			multiplier = <1>;
+			divider = <1>;
+		};
+
+		temp-mcu {
+			io-channels = <&adc1 16>;
+			multiplier = <1>;
+			divider = <1>;
+		};
+
+		i-dcdc {
+			io-channels = <&adc2 1>;
+			// amp gain: 20, resistor: 2 mOhm
+			multiplier = <1000>;	// 1000
+			divider = <40>;	// 2*20
+		};
+
+		i-load {
+			io-channels = <&adc2 2>;
+			// amp gain: 68/2.2, resistor: 2 mOhm
+			multiplier = <2200>;	// 1000*2.2
+			divider = <136>;	// 2*68
+		};
+
+		i-pwm {
+			io-channels = <&adc2 5>;
+			// amp gain: 68/2.2, resistor: 2 mOhm
+			multiplier = <2200>;	// 1000*2.2
+			divider = <136>;	// 2*68
+		};
+	};
+
+	aliases {
+		uart-uext = &usart3;
+		spi-uext = &spi1;
+		i2c-uext = &i2c1;
+	};
+};
+
+&clk_hsi{
+	status = "okay";
+};
+
+&pll {
+	div-m = <4>;
+	mul-n = <75>;
+	div-p = <7>;
+	div-q = <2>;
+	div-r = <2>;
+	clocks = <&clk_hsi>;
+	status = "okay";
+};
+
+&rcc {
+	clocks = <&pll>;
+	clock-frequency = <DT_FREQ_M(150)>;
+	ahb-prescaler = <1>;
+	apb1-prescaler = <1>;
+	apb2-prescaler = <1>;
+};
+
+&usart1 {
+	pinctrl-0 = <&usart1_tx_pa9 &usart1_rx_pa10>;
+	pinctrl-names = "default";
+	current-speed = <115200>;
+	status = "okay";
+};
+
+&usart1_rx_pa10 {
+	bias-pull-up;	// avoid junk characters if pin is left floating
+};
+
+&usart3 {
+	pinctrl-0 = <&usart3_tx_pc10 &usart3_rx_pc11>;
+	pinctrl-names = "default";
+	current-speed = <115200>;
+	status = "okay";
+};
+
+&usart3_rx_pc11 {
+	bias-pull-up;	// avoid junk characters if pin is left floating
+};
+
+&i2c1 {
+	pinctrl-0 = <&i2c1_scl_pa15 &i2c1_sda_pb7>;
+	pinctrl-names = "default";
+	status = "okay";
+};
+
+&spi1 {
+	pinctrl-0 = <&spi1_sck_pb3 &spi1_miso_pb4 &spi1_mosi_pb5>;
+	pinctrl-names = "default";
+	cs-gpios = <&gpiod 2 GPIO_ACTIVE_LOW>;
+	status = "okay";
+};
+
+&rtc {
+	status = "okay";
+};
+
+&flash0 {
+	/*
+	 * For more information, see:
+	 * http://docs.zephyrproject.org/latest/guides/dts/index.html#flash-partitions
+	 */
+	partitions {
+		compatible = "fixed-partitions";
+		#address-cells = <1>;
+		#size-cells = <1>;
+
+		/* Set 4Kb of storage at the end of the 128Kb of flash */
+		storage_partition: partition@1f000 {
+			reg = <0x0001f000 0x00001000>;
+		};
+	};
+};
+
+&iwdg {
+	status = "okay";
+};
+
+&timers1 {
+	status = "okay";
+
+	halfbridge: halfbridge {
+		compatible = "half-bridge";
+		pinctrl-0 = <&tim1_ch1_pa8 &tim1_ch1n_pb13>;
+		pinctrl-names = "default";
+		frequency = <70000>;
+		deadtime = <300>;
+	};
+};
+
+/* TIM3 (CH2) used for PWM power switch */
+&timers3 {
+	status = "okay";
+	pwm3: pwm {
+		status = "okay";
+		pinctrl-0 = <&tim3_ch2_pc7>;
+		pinctrl-names = "default";
+	};
+};
+
+/* TIM8 (CH1) used for charge pump */
+&timers8 {
+	status = "okay";
+	st,prescaler = <149>;	/* reduce counter clock frequency to 1 MHz */
+	pwm8: pwm {
+		status = "okay";
+		pinctrl-0 = <&tim8_ch1_pc6>;
+		pinctrl-names = "default";
+	};
+};
+
+&i2c3 {
+	pinctrl-0 = <&i2c3_scl_pc8 &i2c3_sda_pc9>;
+	pinctrl-names = "default";
+	status = "okay";
+	clock-frequency = <I2C_BITRATE_STANDARD>;
+
+	eeprom: eeprom@50 {
+		// Microchip 24AA32A
+		compatible = "atmel,at24";
+		reg = <0x50>;
+		size = <32768>;
+		pagesize = <32>;
+		address-width = <16>;
+		/*
+		 * timeout of 5 ms as suggested in datasheet seems too optimistic
+		 * (several write errors occured during testing)
+		 */
+		timeout = <7>;
+	};
+};

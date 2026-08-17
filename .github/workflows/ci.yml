@@ -1,0 +1,48 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Python syntax check
+        run: python -m compileall -q src scripts tests run_pipeline.py
+
+      - name: Forbidden secrets scan
+        run: |
+          set -euo pipefail
+          ! grep -RIn --exclude-dir=.git --exclude-dir=.github \
+            -e 'intra\.infineon' \
+            -e 'confluencewikiprod' \
+            -e '/home/harsh' \
+            -e 'sk-[a-zA-Z0-9]\{20,\}' \
+            . || (echo "Forbidden pattern found" && exit 1)
+          if find . -type f \( -name 'key.txt' -o -name 'ca-bundle.crt' -o -name '.env.local' \) | grep -q .; then
+            echo "Forbidden file present in tree"
+            find . -type f \( -name 'key.txt' -o -name 'ca-bundle.crt' -o -name '.env.local' \)
+            exit 1
+          fi
+
+      - name: Run unit tests (mock LLM)
+        env:
+          THESIS_LLM_ENABLED: "0"
+          PYTHONPATH: .
+        run: pytest tests/ -q --tb=short

@@ -1,0 +1,16 @@
+/*
+ * Copyright (c) The Libre Solar Project Contributors
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+/ {
+	pcb {
+		version-str = "v0.2";
+		version-num = <2>;
+	};
+};
+
+&isl94202 {
+	shunt-resistor-uohm = <500>;
+};

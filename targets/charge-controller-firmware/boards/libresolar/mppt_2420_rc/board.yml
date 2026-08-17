@@ -1,0 +1,5 @@
+board:
+  name: mppt_2420_rc
+  vendor: libresolar
+  socs:
+    - name: stm32f072xb

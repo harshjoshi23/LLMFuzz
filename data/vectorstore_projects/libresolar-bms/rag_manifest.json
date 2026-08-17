@@ -1,0 +1,149 @@
+{
+  "files": {
+    "CMakeLists.txt": {
+      "size": 308,
+      "mtime": 1777325443,
+      "sha256": "f4b7e1a33ef50e353c05cd024980f20afe8880eafcb5b7eb075312e6df80b2b1"
+    },
+    "README.md": {
+      "size": 1155,
+      "mtime": 1777325443,
+      "sha256": "03321f188b05285afad86877d538e5a05e0ee7bf758a19a2f20b2ca59d678925"
+    },
+    "README__1.md": {
+      "size": 1155,
+      "mtime": 1778104381,
+      "sha256": "03321f188b05285afad86877d538e5a05e0ee7bf758a19a2f20b2ca59d678925"
+    },
+    "app_CMakeLists.txt": {
+      "size": 596,
+      "mtime": 1777325443,
+      "sha256": "d44a63a05d41e6d322d4f29a2c799e1645adfdf635f5a0d6322c5c3f09e6d3be"
+    },
+    "app_src_CMakeLists.txt": {
+      "size": 262,
+      "mtime": 1777325443,
+      "sha256": "46e015914d717ff9d734a33a5c6892faaec1bd55bc3af2b0db6aa0b8e26edbbd"
+    },
+    "docs_index.rst": {
+      "size": 1094,
+      "mtime": 1777325443,
+      "sha256": "60087dfdf4e525309e2055111f85b918bd5cfcf724bbec0a2dda9b5682af45b9"
+    },
+    "docs_requirements.txt": {
+      "size": 70,
+      "mtime": 1777325443,
+      "sha256": "0f45da79ce1e5800fbd805b6c7b9c7f428bf4c44a084562772c32fe764fe0268"
+    },
+    "docs_src_api_bms.rst": {
+      "size": 145,
+      "mtime": 1777325443,
+      "sha256": "0595c6fd89c5e53a4a02626e1ce35cfaac84128a1ba1f77215ea8c346cfd9bda"
+    },
+    "docs_src_api_bms_ic.rst": {
+      "size": 108,
+      "mtime": 1777325443,
+      "sha256": "c27ff30802d40497324272321753e18d9c04c22ba91762615911d912cdf61602"
+    },
+    "docs_src_api_data_objects.rst": {
+      "size": 76,
+      "mtime": 1777325443,
+      "sha256": "3dde2d139a8055a346cd433a8e570cc07b98144a582cb3eb3f7f08d7e15a17e0"
+    },
+    "docs_src_api_misc.rst": {
+      "size": 136,
+      "mtime": 1777325443,
+      "sha256": "5a5977f0132cb0bb9e9f0e4fda470e29188a37627db62fe26128a0103746191e"
+    },
+    "docs_src_dev_building_flashing.rst": {
+      "size": 4683,
+      "mtime": 1777325443,
+      "sha256": "99da70e9ce0bb5a4fecf4aa37ef3597a74f553aca46905051d4c302b12bd3bdf"
+    },
+    "docs_src_dev_customization.rst": {
+      "size": 3454,
+      "mtime": 1777325443,
+      "sha256": "ae58f26700798902e88ef137c973e13f28da8c82d8b1e294b991a343fc92a652"
+    },
+    "docs_src_dev_simulator.rst": {
+      "size": 656,
+      "mtime": 1777325443,
+      "sha256": "e4e5bbf7c365db58f430378ee1646e8f2596dfc7ecd7f09999707a7a89f1d74b"
+    },
+    "docs_src_dev_unit_tests.rst": {
+      "size": 401,
+      "mtime": 1777325443,
+      "sha256": "5355c60a24fb19fd78992dbc3d2aa56ba57b28f37716d6f0a6ced295285a73a5"
+    },
+    "docs_src_dev_workspace_setup.rst": {
+      "size": 1807,
+      "mtime": 1777325443,
+      "sha256": "96ef931960c293e41c0d5536366ea8d8c52f625441955efbb62574e0823b7ece"
+    },
+    "docs_src_features.rst": {
+      "size": 1819,
+      "mtime": 1777325443,
+      "sha256": "fd4db6bfb0e845113901cf81ed0f661450e351176ad0c53b12699d9e4b098d06"
+    },
+    "docs_src_supported_hardware.rst": {
+      "size": 3129,
+      "mtime": 1777325443,
+      "sha256": "1f4647efb0671f350e704719c6253d39bea78d9c2a6e4e88b18eb28fd7c65dae"
+    },
+    "drivers_CMakeLists.txt": {
+      "size": 137,
+      "mtime": 1777325443,
+      "sha256": "3763be9f36e1e07adb75fb1850f341cab8ce33d0179a389bad98b22a4dd67566"
+    },
+    "drivers_bms_ic_CMakeLists.txt": {
+      "size": 256,
+      "mtime": 1777325443,
+      "sha256": "b86519921029dd3cacc4740289e8fd6787e6f8f171563df4ea1294df23f64e49"
+    },
+    "drivers_bms_ic_bq769x0_CMakeLists.txt": {
+      "size": 144,
+      "mtime": 1777325443,
+      "sha256": "b3a3a650d359a9a8323ba21890a4029affc35a4da57804841f035c9f1d3652b6"
+    },
+    "drivers_bms_ic_bq769x2_CMakeLists.txt": {
+      "size": 270,
+      "mtime": 1777325443,
+      "sha256": "a1de4f7934956f13e7970b42f39d54952c3c7d1a97721cfa98fb13c4f3689bc4"
+    },
+    "drivers_bms_ic_isl94202_CMakeLists.txt": {
+      "size": 273,
+      "mtime": 1777325443,
+      "sha256": "8039aa0cea2c91e6a5d64b8d97062e833f5fd13a0d775bbb2941d233c64dabad"
+    },
+    "lib_CMakeLists.txt": {
+      "size": 143,
+      "mtime": 1777325443,
+      "sha256": "a0a7e6765a8cd646c0024103eeb2b0d2788d09ac6e363f1a9ec7ec56d1e74e96"
+    },
+    "tests_bms_CMakeLists.txt": {
+      "size": 777,
+      "mtime": 1777501697,
+      "sha256": "7e9b89acf87be7fd601181a0888bb8ba9c0d74fbc25fe1779b63832def548854"
+    },
+    "tests_bms_ic_bq769x2_CMakeLists.txt": {
+      "size": 263,
+      "mtime": 1777325443,
+      "sha256": "bc402ff8ce77b99809c06d8a36ba95a88f42bd149cda8b08d820c8960e6c4b4c"
+    },
+    "tests_bms_ic_common_CMakeLists.txt": {
+      "size": 110,
+      "mtime": 1777325443,
+      "sha256": "02c37b8e5b25903430fb1c6ae052565a0db11348d495269c874678404ebbd83f"
+    },
+    "tests_bms_ic_isl94202_CMakeLists.txt": {
+      "size": 264,
+      "mtime": 1777325443,
+      "sha256": "4a64f0dcdc6b3e5148d88267bc4cab0af98dbad71302e5cfc19d7af99713b37b"
+    },
+    "tests_helper_CMakeLists.txt": {
+      "size": 233,
+      "mtime": 1777325443,
+      "sha256": "43f62f47ba2bb608e08a13e005b0dfe5276be72b0a83567b95f2ea4fc393aa93"
+    }
+  }
+}

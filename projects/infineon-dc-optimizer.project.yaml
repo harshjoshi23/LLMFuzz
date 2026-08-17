@@ -1,0 +1,41 @@
+project:
+  name: infineon-dc-optimizer
+  target_path: targets/mtb-example-pwrlib-dc-optimizer
+
+docs:
+  - type: local
+    path: .
+
+rag:
+  index_dir: data/vectorstore_projects/infineon-dc-optimizer
+
+fuzz:
+  protocol: i2c
+  topics:
+    - "input voltage range minimum maximum"
+    - "output voltage range minimum maximum"
+    - "input current limit maximum"
+    - "output current limit maximum"
+    - "switching frequency range"
+    - "PMBus I2C command codes"
+    - "MPPT operating range"
+    - "over-voltage protection threshold"
+    - "over-current protection threshold"
+    - "temperature operating range"
+    - "vendor diagnostic unlock magic constants"
+    - "firmware signature token calibration"
+  duration_seconds: 3600
+  seed_count: 50
+  framing: raw
+  harness:
+    type: afl_c_harness
+    c_file: src/harness/fuzz_dc_optimizer_protocol.c
+
+scenarios:
+  expected: []
+  signals: []
+
+discovery:
+  enabled: true
+  budget_seconds: 180
+  allow_baseline_harness_fallback: true

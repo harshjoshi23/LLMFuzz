@@ -1,0 +1,11 @@
+board:
+  name: mppt_2420_hc
+  vendor: libresolar
+  socs:
+    - name: stm32g431xx
+  revision:
+    format: major.minor.patch
+    default: "0.2.0"
+    revisions:
+      - name: "0.1.0"
+      - name: "0.2.0"
