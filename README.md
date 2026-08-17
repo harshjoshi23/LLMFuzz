@@ -2,24 +2,53 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python 3.12+](https://img.shields.io/badge/python-3.12+-blue.svg)](https://www.python.org/downloads/)
+[![CI](https://github.com/harshjoshi23/LLMFuzz/actions/workflows/ci.yml/badge.svg)](https://github.com/harshjoshi23/LLMFuzz/actions/workflows/ci.yml)
 
-Retrieval-augmented LLM pipeline that turns firmware documentation into AFL++ seed corpora for coverage-guided fuzzing of embedded power-conversion firmware (PMBus / I²C).
+**Retrieval-augmented LLM pipeline that turns firmware documentation into AFL++ seed corpora for coverage-guided fuzzing of embedded power-conversion firmware (PMBus / I²C).**
+
+Companion implementation for the master's thesis and the STVR manuscript [*From Datasheets to Seeds: Retrieval-Augmented Constraint Extraction for Coverage-Guided Fuzzing of Embedded Firmware*](https://github.com/harshjoshi23/LLMFuzz) (Software Testing, Verification and Reliability — in preparation).
 
 ## Authors
 
 - **Harshvardhan Joshi** — Friedrich-Alexander-Universität Erlangen-Nürnberg (Informatik 7) and Infineon Technologies AG
-- **Mojdeh Golagha** — Infineon Technologies AG (Power & Sensor Systems, CRD SIS SWT)
 - **Loui Al Sardy** — Friedrich-Alexander-Universität Erlangen-Nürnberg, Computer Networks and Communication Systems (Informatik 7)
+- **Mojdeh Golagha** — Infineon Technologies AG (Power & Sensor Systems, CRD SIS SWT)
 
 **Thesis:** *Retrieval Augmented LLM Seed Generation for Coverage-Guided Fuzzing of Embedded Power-Conversion Firmware* (M.Sc., FAU, 2026)
 
-This is a **sanitized private release**. Infineon firmware under test is not redistributed here (Infineon hosts that snapshot on their official code portal). Evaluation of the primary target uses the protocol-harness facsimile in `src/harness/fuzz_dc_optimizer_protocol.c`.
+This is a **sanitized public release**. Infineon firmware under test is not redistributed here (Infineon hosts that snapshot on their official code portal). Evaluation of the primary target uses the protocol-harness facsimile in `src/harness/fuzz_dc_optimizer_protocol.c`.
 
 ## Highlights
 
 On the primary sanitized DC-optimizer protocol harness, documentation-grounded AFL++ seeds reach a 200-edge milestone in **median ≈ 60 s** versus **median ≈ 4139 s** for a 64-byte zero-filled baseline — an approximately **69×** median time-to-threshold ratio at that milestone only (Mann–Whitney *p* = 2.08 × 10⁻⁶, Vargha–Delaney A₁₂ = 0.971). See `REPRODUCIBILITY.md` for the evaluation protocol. This is a coverage-acceleration result, not a vulnerability-discovery claim.
 
-## What is in this repository
+## Architecture
+
+![LLMFuzz pipeline](docs/images/pipeline.svg)
+
+```mermaid
+flowchart LR
+  subgraph ingest ["Documentation"]
+    DOCS[PDF / Markdown corpus]
+  end
+
+  subgraph rag ["Retrieval"]
+    FAISS[FAISS index]
+    RET[Top-k chunks]
+  end
+
+  subgraph gen ["Seed generation"]
+    LLM[LLM constraint extraction]
+    ENC[Deterministic protocol encoder]
+  end
+
+  subgraph fuzz ["Fuzzing"]
+    AFL[AFL++ harness]
+    COV[Coverage reports]
+  end
+
+  DOCS --> FAISS --> RET --> LLM --> ENC --> AFL --> COV
+```
 
 | Path | Purpose |
 |------|---------|
@@ -31,7 +60,7 @@ On the primary sanitized DC-optimizer protocol harness, documentation-grounded A
 | `scripts/` | SoK-style 2 h / 24 h campaign launchers |
 | `tests/` | Unit tests (run in CI without LLM keys) |
 
-Infineon DUT sources are **not** in this tree. See `targets/README.md`.
+Infineon DUT sources are **not** in this tree. See `targets/README.md` and `NOTICE.md`.
 
 ## Quick start
 
@@ -124,6 +153,8 @@ MIT — see [`LICENSE`](LICENSE). Firmware under `targets/` retains upstream lic
 
 ## Citation
 
+**Thesis:**
+
 ```bibtex
 @mastersthesis{joshi2026llmfuzz,
   author = {Joshi, Harshvardhan},
@@ -131,5 +162,18 @@ MIT — see [`LICENSE`](LICENSE). Firmware under `targets/` retains upstream lic
   school = {Friedrich-Alexander-Universit{\"a}t Erlangen-N{\"u}rnberg},
   year   = {2026},
   note   = {Computer Networks and Communication Systems (Informatik 7)}
+}
+```
+
+**STVR article (in preparation):**
+
+```bibtex
+@article{joshi2026datasheets,
+  author  = {Joshi, Harshvardhan and Al Sardy, Loui and Golagha, Mojdeh},
+  title   = {From Datasheets to Seeds: Retrieval-Augmented Constraint Extraction for Coverage-Guided Fuzzing of Embedded Firmware},
+  journal = {Software Testing, Verification and Reliability},
+  year    = {2026},
+  note    = {In preparation},
+  url     = {https://github.com/harshjoshi23/LLMFuzz}
 }
 ```

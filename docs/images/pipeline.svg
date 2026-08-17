@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 200" role="img" aria-labelledby="title desc">
+  <title id="title">LLMFuzz pipeline</title>
+  <desc id="desc">Documentation flows through RAG and LLM constraint extraction, deterministic protocol encoding, and AFL++ fuzzing.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#1F4E79"/>
+    </marker>
+    <style>
+      .box { fill: #F3F5F7; stroke: #1F4E79; stroke-width: 2; rx: 8; }
+      .title { font: 700 14px Arial, sans-serif; fill: #1F4E79; }
+      .label { font: 12px Arial, sans-serif; fill: #222222; }
+      .arrow { stroke: #1F4E79; stroke-width: 2.5; fill: none; marker-end: url(#arrow); }
+    </style>
+  </defs>
+  <rect class="box" x="20" y="55" width="130" height="90"/>
+  <text class="title" x="85" y="88" text-anchor="middle">Docs</text>
+  <text class="label" x="85" y="108" text-anchor="middle">PDF / MD</text>
+  <text class="label" x="85" y="125" text-anchor="middle">corpus</text>
+
+  <rect class="box" x="185" y="55" width="130" height="90"/>
+  <text class="title" x="250" y="88" text-anchor="middle">RAG</text>
+  <text class="label" x="250" y="108" text-anchor="middle">FAISS</text>
+  <text class="label" x="250" y="125" text-anchor="middle">retrieval</text>
+
+  <rect class="box" x="350" y="55" width="130" height="90"/>
+  <text class="title" x="415" y="88" text-anchor="middle">LLM</text>
+  <text class="label" x="415" y="108" text-anchor="middle">constraint</text>
+  <text class="label" x="415" y="125" text-anchor="middle">extraction</text>
+
+  <rect class="box" x="515" y="55" width="130" height="90"/>
+  <text class="title" x="580" y="88" text-anchor="middle">Encoder</text>
+  <text class="label" x="580" y="108" text-anchor="middle">I²C / PMBus</text>
+  <text class="label" x="580" y="125" text-anchor="middle">seed bytes</text>
+
+  <rect class="box" x="680" y="55" width="120" height="90"/>
+  <text class="title" x="740" y="88" text-anchor="middle">AFL++</text>
+  <text class="label" x="740" y="108" text-anchor="middle">protocol</text>
+  <text class="label" x="740" y="125" text-anchor="middle">harness</text>
+
+  <line class="arrow" x1="150" y1="100" x2="185" y2="100"/>
+  <line class="arrow" x1="315" y1="100" x2="350" y2="100"/>
+  <line class="arrow" x1="480" y1="100" x2="515" y2="100"/>
+  <line class="arrow" x1="645" y1="100" x2="680" y2="100"/>
+
+  <text class="label" x="410" y="30" text-anchor="middle">Thesis path: projects/*.yaml ’ src/cli.py ’ src/pipeline.py</text>
+</svg>
