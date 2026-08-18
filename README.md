@@ -6,7 +6,7 @@
 
 **Retrieval-augmented LLM pipeline that turns firmware documentation into AFL++ seed corpora for coverage-guided fuzzing of embedded power-conversion firmware (PMBus / I²C).**
 
-Companion implementation for the master's thesis and the STVR manuscript [*From Datasheets to Seeds: Retrieval-Augmented Constraint Extraction for Coverage-Guided Fuzzing of Embedded Firmware*](https://github.com/harshjoshi23/LLMFuzz) (Software Testing, Verification and Reliability — in preparation).
+Companion implementation for the master's thesis and the STVR manuscript *From Datasheets to Seeds: Retrieval-Augmented Constraint Extraction for Coverage-Guided Fuzzing of Embedded Firmware* ([Software Testing, Verification and Reliability](https://onlinelibrary.wiley.com/journal/10991689) — in preparation).
 
 ## Authors
 
