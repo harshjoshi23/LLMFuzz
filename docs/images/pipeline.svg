@@ -1,46 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 200" role="img" aria-labelledby="title desc">
-  <title id="title">LLMFuzz pipeline</title>
-  <desc id="desc">Documentation flows through RAG and LLM constraint extraction, deterministic protocol encoding, and AFL++ fuzzing.</desc>
-  <defs>
-    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
-      <path d="M0,0 L6,3 L0,6 Z" fill="#1F4E79"/>
-    </marker>
-    <style>
-      .box { fill: #F3F5F7; stroke: #1F4E79; stroke-width: 2; rx: 8; }
-      .title { font: 700 14px Arial, sans-serif; fill: #1F4E79; }
-      .label { font: 12px Arial, sans-serif; fill: #222222; }
-      .arrow { stroke: #1F4E79; stroke-width: 2.5; fill: none; marker-end: url(#arrow); }
-    </style>
-  </defs>
-  <rect class="box" x="20" y="55" width="130" height="90"/>
-  <text class="title" x="85" y="88" text-anchor="middle">Docs</text>
-  <text class="label" x="85" y="108" text-anchor="middle">PDF / MD</text>
-  <text class="label" x="85" y="125" text-anchor="middle">corpus</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="200" viewBox="0 0 820 200" role="img" aria-label="LLMFuzz pipeline">
+  <rect width="820" height="200" fill="#F7F8FA"/>
+  <text x="410" y="28" text-anchor="middle" fill="#555555" font-family="Arial, Helvetica, sans-serif" font-size="13">LLMFuzz: documentation to seeds to AFL++</text>
 
-  <rect class="box" x="185" y="55" width="130" height="90"/>
-  <text class="title" x="250" y="88" text-anchor="middle">RAG</text>
-  <text class="label" x="250" y="108" text-anchor="middle">FAISS</text>
-  <text class="label" x="250" y="125" text-anchor="middle">retrieval</text>
+  <rect x="20" y="55" width="130" height="90" rx="8" fill="#D4E6F1" stroke="#1F4E79" stroke-width="2"/>
+  <text x="85" y="90" text-anchor="middle" fill="#1F4E79" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700">1. Docs</text>
+  <text x="85" y="112" text-anchor="middle" fill="#222222" font-family="Arial, Helvetica, sans-serif" font-size="12">PDF / Markdown</text>
 
-  <rect class="box" x="350" y="55" width="130" height="90"/>
-  <text class="title" x="415" y="88" text-anchor="middle">LLM</text>
-  <text class="label" x="415" y="108" text-anchor="middle">constraint</text>
-  <text class="label" x="415" y="125" text-anchor="middle">extraction</text>
+  <rect x="185" y="55" width="130" height="90" rx="8" fill="#D5F5E3" stroke="#009E73" stroke-width="2"/>
+  <text x="250" y="90" text-anchor="middle" fill="#1F4E79" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700">2. RAG</text>
+  <text x="250" y="112" text-anchor="middle" fill="#222222" font-family="Arial, Helvetica, sans-serif" font-size="12">FAISS retrieval</text>
 
-  <rect class="box" x="515" y="55" width="130" height="90"/>
-  <text class="title" x="580" y="88" text-anchor="middle">Encoder</text>
-  <text class="label" x="580" y="108" text-anchor="middle">I²C / PMBus</text>
-  <text class="label" x="580" y="125" text-anchor="middle">seed bytes</text>
+  <rect x="350" y="55" width="130" height="90" rx="8" fill="#D6EAF8" stroke="#0072B2" stroke-width="2"/>
+  <text x="415" y="90" text-anchor="middle" fill="#1F4E79" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700">3. LLM</text>
+  <text x="415" y="112" text-anchor="middle" fill="#222222" font-family="Arial, Helvetica, sans-serif" font-size="12">typed constraints</text>
 
-  <rect class="box" x="680" y="55" width="120" height="90"/>
-  <text class="title" x="740" y="88" text-anchor="middle">AFL++</text>
-  <text class="label" x="740" y="108" text-anchor="middle">protocol</text>
-  <text class="label" x="740" y="125" text-anchor="middle">harness</text>
+  <rect x="515" y="55" width="130" height="90" rx="8" fill="#D6EAF8" stroke="#0072B2" stroke-width="2"/>
+  <text x="580" y="90" text-anchor="middle" fill="#1F4E79" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700">4. Encoder</text>
+  <text x="580" y="112" text-anchor="middle" fill="#222222" font-family="Arial, Helvetica, sans-serif" font-size="12">I2C / PMBus bytes</text>
 
-  <line class="arrow" x1="150" y1="100" x2="185" y2="100"/>
-  <line class="arrow" x1="315" y1="100" x2="350" y2="100"/>
-  <line class="arrow" x1="480" y1="100" x2="515" y2="100"/>
-  <line class="arrow" x1="645" y1="100" x2="680" y2="100"/>
+  <rect x="680" y="55" width="120" height="90" rx="8" fill="#FDEBD0" stroke="#E69F00" stroke-width="2"/>
+  <text x="740" y="90" text-anchor="middle" fill="#1F4E79" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700">5. AFL++</text>
+  <text x="740" y="112" text-anchor="middle" fill="#222222" font-family="Arial, Helvetica, sans-serif" font-size="12">coverage fuzzing</text>
 
-  <text class="label" x="410" y="30" text-anchor="middle">Thesis path: projects/*.yaml ’ src/cli.py ’ src/pipeline.py</text>
+  <polygon points="155,100 180,90 180,110" fill="#1F4E79"/>
+  <polygon points="320,100 345,90 345,110" fill="#1F4E79"/>
+  <polygon points="485,100 510,90 510,110" fill="#1F4E79"/>
+  <polygon points="650,100 675,90 675,110" fill="#1F4E79"/>
 </svg>
