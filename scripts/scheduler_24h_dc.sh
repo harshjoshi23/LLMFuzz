@@ -1,18 +1,15 @@
 #!/usr/bin/env bash
 #
-# scheduler_24h_dc.sh — unattended chained scheduler for 24h DC batches.
+# scheduler_24h_dc.sh — optional chained scheduler for 24h DC batches.
 #
-# Each batch = 6 parallel × 24h trials (3 LLM + 3 baseline) on DC, launched via
-# scripts/run_parallel_24h_dc.sh. The scheduler:
+# This is an EXTENDED local campaign launcher. It is NOT the STVR primary
+# experiment (that comparison is two hours, N=20 vs N=14).
 #
-#   1. Waits for batch 1 (already running, ends Sun 14 Jun ~11:39 CEST) to finish.
-#   2. Runs INTERIM post-processing so user has data for Sun-night uni report.
-#   3. Launches batch 2 immediately after.
-#   4. Loops: wait 24h for memory to free, launch next batch, do mini-postprocess.
-#   5. After the final batch, runs FULL post-processing into /tmp/dc_final_*.txt.
+# Each batch = 6 parallel × 24h trials (3 documentation-grounded + 3 baseline)
+# on DC, launched via scripts/run_parallel_24h_dc.sh.
 #
-# Default: 9 more batches after batch 1 = 10 batches total = N=30 LLM + N=30 baseline
-# at 24h — exactly matches the kolloquium announcement.
+# Default: 9 more batches after batch 1 = 10 batches total = N=30 per arm
+# at 24h. Override with NUM_MORE_BATCHES.
 #
 # OVERRIDE: NUM_MORE_BATCHES=N bash scripts/scheduler_24h_dc.sh
 #   N=2  ->  batches 2,3        -> N=9/9  total   (3-day plan)

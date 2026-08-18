@@ -1,18 +1,12 @@
 #!/usr/bin/env bash
 #
-# run_local_8h_thesis.sh — 8-hour × 3 trials × {LLM,baseline} × 3 targets
-# = 18 trials × 8 h sequential = ~144 h wall-clock.
+# run_local_8h_thesis.sh — optional 8-hour rerun launcher.
 #
-# REALITY CHECK: 144 h = 6 days non-stop. Use only if your machine can
-# be dedicated for a week and you actually need the extended-saturation
-# evidence for the paper. For the thesis the existing N=18 at 2 h
-# already passes SoK; you do NOT need this for submission.
+# This is NOT the STVR primary experiment (that comparison is two hours,
+# N=20 vs N=14). Use only for a longer local saturation check.
 #
-# Practical alternative: bash scripts/run_local_8h_thesis.sh
-# with N_TRIALS=1 (default below) runs ONE 8h trial per target per arm
-# = 6 trials × 8 h = 48 h ≈ 2 days — enough to confirm saturation.
-#
-# Prereqs: GPT4IFX_API_KEY exported, FAISS indexes built, .venv active.
+# Default N_TRIALS=1: one 8h trial per target per arm (~48 h sequential).
+# N_TRIALS=3 is ~144 h. Requires LLM credentials in .env.local.
 #
 # Usage:
 #   bash scripts/run_local_8h_thesis.sh                       # 1 trial per arm per target (48 h)

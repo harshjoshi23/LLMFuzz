@@ -1,12 +1,9 @@
 #!/usr/bin/env bash
 #
-# run_parallel_24h_dc.sh — N parallel 24-hour DC-optimizer trials in tmux.
+# run_parallel_24h_dc.sh — optional 24-hour parallel launcher (extended rerun).
 #
-# Purpose: close the gap between the FAU kolloquium announcement
-# (which promises N=30 × 24h trials) and the thesis's primary 2-hour SoK
-# sample. Generates `local_24h_infineon-dc-optimizer_{llm,baseline}_tN_TS/`
-# directories whose names are picked up automatically by
-# scripts/sok_stats_last5.py and scripts/ttc_milestones.py.
+# This is NOT the STVR primary experiment (that comparison is two hours,
+# N=20 vs N=14). Use only if you want a longer local campaign.
 #
 # Machine assumption: 8 cores, 7.6 GB RAM. Safe parallelism is 4-6 trials.
 # DO NOT raise PER_ARM above 3 (= 6 total parallel) without checking RAM.

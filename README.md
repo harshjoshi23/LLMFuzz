@@ -20,7 +20,7 @@ The evaluation used **three** protocol harnesses. All three project files and in
 | 2 | `libresolar-bms` | Public LibreSolar BMS snapshot + harness | Exploratory transfer |
 | 3 | `libresolar-charge-controller` | Public LibreSolar charge-controller snapshot + harness | Exploratory transfer |
 
-Why the Infineon tree is a stub: Infineon hosts that firmware on their own portal. The primary numbers still reproduce from `src/harness/fuzz_dc_optimizer_protocol.c` and `projects/infineon-dc-optimizer.project.yaml`.
+Why the Infineon tree is a stub: Infineon hosts that firmware on their own portal. The primary study used the sanitized facsimile `src/harness/fuzz_dc_optimizer_protocol.c`. Reruns exercise the same method; they are not a bit-identical recreation of the reported sample (see [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md)).
 
 | Project YAML | Harness | Protocol |
 |--------------|---------|----------|
@@ -84,13 +84,17 @@ Re-index your own docs with `python -m src.cli index --project projects/<name>.p
 
 ## Reproducibility
 
-Commands for smoke tests and SoK campaigns: [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md). Architecture: [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md).
+Commands to **rerun the released pipeline**: [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md).
+Those commands reproduce the **method**, not a bit-identical copy of the historical
+STVR sample (\(N{=}20/14\), two-hour primary comparison). Original per-trial AFL++
+files are not in this repository. Infineon proprietary firmware and documentation
+are not distributed. Architecture: [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md).
 
 ## Authors
 
 - **Harshvardhan Joshi** — FAU Informatik 7 and Infineon Technologies AG
-- **Loui Al Sardy** — FAU, Computer Networks and Communication Systems (Informatik 7)
 - **Mojdeh Golagha** — Infineon Technologies AG (PSS, CRD SIS SWT)
+- **Loui Al Sardy** — FAU, Computer Networks and Communication Systems (Informatik 7)
 
 ## License
 

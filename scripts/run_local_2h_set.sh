@@ -1,14 +1,13 @@
 #!/usr/bin/env bash
 #
-# run_local_2h_set.sh — 2-hour × 3 trials × {LLM,baseline} × 3 targets
-# = 18 trials × 2 h sequential = ~36 h wall-clock on a single host.
+# run_local_2h_set.sh — optional 2-hour rerun launcher (released pipeline).
 #
-# Use this if you want to refresh the *2-hour comparison sample* on the
-# widened harness (with new 0xE4/0xE5/EEPROM/PMBus surface).
-# If the goal is the THESIS submission, current N=18 already passes SoK
-# on the unwidened harness; you probably want run_local_8h_thesis.sh instead.
+# Default: 3 trials × {llm,baseline} per listed target, duration 7200 s.
+# This is a convenience rerun script. It is NOT the historical STVR sample
+# (that paper reports N=20 documentation-grounded vs N=14 baseline on the
+# primary harness). Override N_TRIALS if you want a larger local rerun.
 #
-# Prereqs: GPT4IFX_API_KEY exported, FAISS indexes built, .venv active.
+# Prereqs: LLM credentials in .env.local, FAISS indexes present, .venv active.
 #
 # Usage:
 #   bash scripts/run_local_2h_set.sh                       # all 3 targets, 3 trials each

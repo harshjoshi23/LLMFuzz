@@ -1,102 +1,83 @@
 # Reproducibility Guide
 
-Exact commands to reproduce the evaluation protocol described in the M.Sc. thesis
-(*Retrieval Augmented LLM Seed Generation for Coverage-Guided Fuzzing of Embedded
-Power-Conversion Firmware*, FAU, 2026).
+This repository is a **sanitized public implementation** of the documentation-to-seed pipeline.
+Commands below rerun the **released method**. They are **not** a claim that a rerun is
+bit-identical to the historical STVR / thesis campaign.
 
-## 1. Hardware / OS requirements
+## What the STVR manuscript reports (do not overwrite these)
+
+Primary confirmatory comparison (sanitized DC-optimizer protocol harness):
+
+* Arms: documentation-grounded vs one 64-byte zero-filled seed
+* \(N = 20\) documentation-grounded, \(N = 14\) baseline
+* Budget: **two hours**
+* About **28 unique** documentation-grounded seeds per evaluated primary trial
+* Final edges: \(217.8 \pm 1.8\) vs \(206.1 \pm 6.9\)
+* Median time to 200 edges: 60 s (20/20) vs 4139 s (13/14) — about **69× at that milestone only**, not a general fuzzing speedup
+* Coverage acceleration, not vulnerability discovery
+
+Exact historical chat-model identifiers, some sampling settings, and some
+campaign-binding YAML details could not be fully reconciled. Original per-trial
+AFL++ artefacts (`plot_data`, `fuzzer_stats`, `run.json`) are **not** in this
+repository. Infineon proprietary firmware and datasheets are **not** distributed.
+
+Example project files (for example `duration_seconds: 3600`) are **defaults /
+examples**. The 2-hour scripts override duration to 7200 s.
+
+## 1. Hardware / OS
 
 * Ubuntu 22.04 LTS or 24.04 LTS (also tested on WSL2 Ubuntu 22.04)
 * x86_64, ≥ 4 cores, ≥ 8 GB RAM
-* ≥ 10 GB free disk for a full N=30 × 24 h evaluation per target
+* Extra disk if you run optional long campaigns (see §5)
 
-## 2. One-shot bootstrap
+## 2. Bootstrap
 
 ```bash
-bash install.sh                         # apt + AFL++ + venv + pip + harness build
+bash install.sh
 source .venv/bin/activate
-python -m src.cli doctor                # all checks green
+python -m src.cli doctor
 ```
 
-The bootstrap takes ~5 minutes on a typical machine. Offline checks pass with
-`THESIS_LLM_ENABLED=0` (no LLM endpoint required for `doctor` structure checks).
+Offline: `THESIS_LLM_ENABLED=0`.
 
-## 3. Smoke test (3 minutes)
+## 3. Smoke test (about 3 minutes)
 
 ```bash
 cp .env.example .env.local
-# edit .env.local — set your LLM endpoint credentials
+# set your LLM endpoint in .env.local
 
 THESIS_LLM_ENABLED=1 python -m src.cli \
     --project projects/infineon-dc-optimizer.project.yaml \
     fuzz --protocol i2c --duration 180 --run-id smoke_test
-
-grep -E "edges_found|run_time|execs_per_sec" \
-    results/smoke_test/afl/i2c/default/fuzzer_stats
 ```
 
-You should see ~200 edges found in well under 60 seconds (LLM arm).
+This checks that the released pipeline runs. It does **not** recreate the STVR
+sample sizes or the reported statistics.
 
-## 4. Full SoK evaluation — 2-hour primary sample
+## 4. Optional 2-hour rerun (released scripts)
 
 ```bash
 N_TRIALS=5 bash scripts/run_local_2h_set.sh infineon-dc-optimizer
-# ≈ 20 hours wall-clock on a single host (5 trials × 2 arms × 2 h)
 ```
 
-Output: `results/local_2h_infineon-dc-optimizer_{llm,baseline}_tN_TS/`.
+The script uses a 2-hour (`7200` s) budget, matching the **reported** comparison
+length. Trial counts you choose here are **your** rerun, not the historical
+\(N{=}20/14\) sample.
 
-## 5. Full SoK evaluation — 24-hour extended
+## 5. Optional longer campaigns (not the STVR primary result)
 
-```bash
-# Each batch is 6 parallel trials (3 LLM + 3 baseline) × 24 h
-SESSION=batch1 bash scripts/run_parallel_24h_dc.sh
+Scripts such as `run_parallel_24h_dc.sh` and `scheduler_24h_dc.sh` are
+**extended / example** launchers (including plans that mention N=30 or 24 h).
+They are not the confirmatory experiment in the STVR manuscript.
 
-# Or use the auto-scheduler for N batches end-to-end (default 10 batches = N=30)
-NUM_MORE_BATCHES=9 bash scripts/scheduler_24h_dc.sh
-```
-
-## 6. Post-processing and statistics
-
-```bash
-# Replay gcov on every trial (idempotent)
-bash scripts/gcov_all_trials.sh
-
-# Head-to-head MWU + A12 stats over the last N trials per arm
-python scripts/sok_stats_lastN.py 30          # combined budgets
-python scripts/sok_stats_lastN.py 30 24h      # 24h-only subset
-
-# Time-to-coverage milestones
-python scripts/ttc_milestones.py
-
-# gcov line/branch coverage table
-python scripts/verify_gcov_table.py
-```
-
-## 7. Other targets
+## 6. Other targets
 
 Replace `infineon-dc-optimizer` with `libresolar-bms` or
-`libresolar-charge-controller` in step 4 to evaluate the other targets.
+`libresolar-charge-controller` to exercise the public transfer harnesses.
 
-## 8. Expected resource usage (per concurrent trial)
+## 7. Public release notes
 
-* CPU: 1 core for AFL++ + fractional core for LLM agent
-* RAM: ~150 MB resident
-* Disk: ~5 MB after gcov post-processing
-* Network: bounded LLM API call rate (~1–5 calls/sec during early fuzzing)
-
-## 9. Determinism caveats
-
-* AFL++ uses non-deterministic mutation scheduling. Re-running yields
-  similar but not identical edge counts. The SoK protocol uses N=30
-  trials to make per-arm variance estimable.
-* LLM responses are non-deterministic at temperature > 0. The seed-
-  generation agent uses temperature 0.7; constraint extraction uses 0.0.
-
-## 10. Public release notes
-
-* The shipped **DC Optimizer FAISS index** contains three public corpus
-  chunks. Proprietary Windchill / internal PDF exports were removed; run
-  `python -m src.cli index` with your own documentation to expand coverage.
-* Configure LLM endpoints via `.env.local`; never commit `key.txt`,
-  `ca-bundle.crt`, or proprietary datasheets.
+* The shipped DC-optimizer FAISS index contains public corpus chunks only.
+* Do not commit `key.txt`, `ca-bundle.crt`, `.env.local`, or proprietary PDFs.
+* Reruns will differ: AFL++ mutation is non-deterministic, and LLM calls are
+  not pinned to the historical gateway settings.

@@ -41,7 +41,7 @@ Configure crawler base URLs via environment variables; the shipped package repla
 | `src/rag_pipeline/` | Chunking, embedding, retrieval |
 | `src/harness/*.c` | Protocol facsimiles compiled by AFL++ |
 | `targets/` | Public LibreSolar snapshots; Infineon DUT is not shipped (harness facsimile only) |
-| `scripts/run_local_2h_set.sh` | SoK-style head-to-head campaigns |
+| `scripts/run_local_2h_set.sh` | Optional 2-hour rerun launcher (not the historical STVR sample) |
 
 ## Offline development
 

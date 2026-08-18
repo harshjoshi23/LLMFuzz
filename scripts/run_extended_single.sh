@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 #
-# run_extended_single.sh — One long-budget exploration trial per target.
-# Useful for personal investigation of true saturation behaviour. Not
-# used for the SoK statistical comparison (which fixes the budget).
+# run_extended_single.sh — optional long-budget exploration trial per target.
+# Not the STVR primary comparison (that uses a two-hour budget).
 #
 # Usage:
 #   bash scripts/run_extended_single.sh                                  # 12 h per arm per target = 72 h

@@ -1,23 +1,21 @@
 #!/usr/bin/env bash
 #
-# run_thesis_eval.sh — thesis evaluation campaign (SoK-graded)
+# run_thesis_eval.sh — optional multi-trial rerun launcher.
 #
-# Runs N trials × M targets × 2 modes (LLM + baseline), computes
-# per-target Mann-Whitney U / Vargha-Delaney A12 comparison.
+# This is NOT a recreation of the historical STVR sample sizes or budgets.
+# It runs N trials × M targets × 2 modes (documentation-grounded + baseline)
+# and can feed scripts that compute Mann-Whitney U / Vargha-Delaney A12.
 #
-# SoK grading (Schloegel et al. USENIX Sec'24 + Klees et al. CCS'18):
+# Example presets (your rerun, not the paper's N=20/14 × 2h record):
 #
-#   TIER 1 — Thesis presentation / Infineon internal submission
-#     TRIALS=3  DURATION=7200   (3 trials × 2h)  ~18h serial, 3 targets
-#     Defensible minimum. Shows trend, not full convergence.
+#   TIER 1 — short local check
+#     TRIALS=3  DURATION=7200   (3 trials × 2h)
 #
-#   TIER 2 — Thesis document (submitted in 1 week)
-#     TRIALS=5  DURATION=14400  (5 trials × 4h)  ~60h serial, 3 targets
-#     Recommended. p-values meaningful. Covers plateau region.
+#   TIER 2 — longer local check
+#     TRIALS=5  DURATION=14400  (5 trials × 4h)
 #
-#   TIER 3 — Journal / external publication (post-thesis)
-#     TRIALS=10 DURATION=43200  (10 trials × 12h) ~360h serial, 3 targets
-#     Full SoK compliance. Run on VM in parallel.
+#   TIER 3 — extended local campaign
+#     TRIALS=10 DURATION=43200  (10 trials × 12h)
 #
 # Usage:
 #   bash scripts/run_thesis_eval.sh                                 # Tier 1 defaults
