@@ -9,6 +9,7 @@ from __future__ import annotations
 import hashlib
 import json
 import os
+import subprocess
 import time
 from dataclasses import dataclass, asdict
 from pathlib import Path
@@ -39,32 +40,17 @@ def _sha256_dir(dir_path: Path) -> str:
 
 
 def _git_commit_hash(repo_root: Path) -> Optional[str]:
-    # avoid shelling out if not a git repo
-    git_dir = repo_root / ".git"
-    if not git_dir.exists():
-        return None
-
-    head = (git_dir / "HEAD")
-    if not head.exists():
-        return None
-
     try:
-        head_txt = head.read_text().strip()
-    except Exception:
+        result = subprocess.run(
+            ["git", "-C", str(repo_root), "rev-parse", "--verify", "HEAD"],
+            capture_output=True,
+            text=True,
+            timeout=5,
+            check=True,
+        )
+    except (OSError, subprocess.SubprocessError):
         return None
-
-    if head_txt.startswith("ref:"):
-        ref = head_txt.split(" ", 1)[1].strip()
-        ref_path = git_dir / ref
-        if ref_path.exists():
-            try:
-                return ref_path.read_text().strip()
-            except Exception:
-                return None
-        return None
-
-    # detached head
-    return head_txt if head_txt else None
+    return result.stdout.strip() or None
 
 
 @dataclass
