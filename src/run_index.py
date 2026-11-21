@@ -21,6 +21,7 @@ def _sha256_dir(dir_path: Path) -> str:
 
     This is intentionally simple and potentially slow for huge corpora.
     For thesis reproducibility (small demo runs), it's acceptable.
+    Read failures propagate so a partial digest is never recorded as complete.
     """
 
     h = hashlib.sha256()
@@ -31,10 +32,7 @@ def _sha256_dir(dir_path: Path) -> str:
         rel = p.relative_to(dir_path).as_posix()
         h.update(rel.encode("utf-8"))
         h.update(b"\0")
-        try:
-            h.update(p.read_bytes())
-        except Exception:
-            continue
+        h.update(p.read_bytes())
         h.update(b"\0")
     return h.hexdigest()
 
